@@ -21,7 +21,7 @@ def ChangeCategory(before,after):
             dic[str(Key)]=after
             writejson(dic)
     except:
-        pass
+        Addnumbertojson(before)
 
 def Creategory(cates):    #give a new Category(str) ,that will be writed into json file
     if os.path.exists("./Category.json")==False:
@@ -66,6 +66,6 @@ def writejson(dic,path='./Category.json'):
     f.close()
 
 # print(Creategory("ysu"))
-# Addnumbertojson("nqao")
+# Addnumbertojson("bainqao")
 
-# ChangeCategory('nihao','yuzhimin')
+# ChangeCategory('yuzhimin','qq')

@@ -1,7 +1,7 @@
 import pandas as pd 
 import Time as t
 import os
-
+import time
 
 #This is a code use to test
 cloumns=['Date','Category','Time','Content','Timestamp','Rank'] 
@@ -11,10 +11,12 @@ def CreateData():
     df.to_csv('./data1.csv')
     # print(df)
 # CreateData()
-def Datashow(path='./data1.csv'):
+def Datashow(tuple,path='./data1.csv'):
     os.system('cls')
     df = pd.read_csv('./data1.csv',index_col=None)
-    print(df)
+    print(df.iloc[tuple[0]:tuple[1],:])
+    # time.sleep(5)
+
 def search():
     # print(str(cloumns[0:2]))
     print("Please input type what you want to find(1.Data;2.Cate;3.Content):")

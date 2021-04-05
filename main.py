@@ -3,7 +3,7 @@ import sys
 import os
 import csv
 import data
-
+import time
 def home():
     os.system('cls')
     select=[" ","1-显示时间记录","2-添加时间记录","3-删除时间记录","4-修改时间记录","5-分析时间记录","6-退出系统"]
@@ -42,8 +42,45 @@ def decide(choice):
 
 
 def TimeRecordH():
-    data.Datashow()
-    print
+    os.system('cls')
+    choice='p'
+    i=1
+    while choice!='q':
+        data.Datashow((0,10))
+        print("Please input what do you want to do[n-next page;s-search;p-picture;q-quit]:")
+        choice=msvcrt.getch().decode('UTF-8')  
+        # print(choice)
+        if choice=='n':
+            # os.system('cls')
+            try:
+                i+=1
+                # time.sleep(5)
+                print("Please input what do you want to do[n-next page;s-search;p-picture;q-quit]:")
+                data.Datashow(((i-1)*10,i*10))
+                choice=msvcrt.getch().decode('UTF-8')
+            except:
+                print("sorry,data is over")
+                # time.sleep()
+                continue
+        elif choice=='s':
+            print("Please enter the type you want to search[1.time,2-category,3-content]:")
+            choice=eval(msvcrt.getch())
+            if choice==1:
+                print("Input by form [M-D or search by Y]:")
+
+
+        elif choice==3:
+            # DeleteTime()
+            pass
+        elif choice==4:
+            # ChangeTime()
+            pass
+        elif choice==5:
+            # AnalysisUi()
+            pass
+        else :
+            print("see you!")
+            sys.exit()
 
 
 def AddTimeH():

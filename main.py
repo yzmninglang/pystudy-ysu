@@ -104,14 +104,14 @@ def TimeRecordH():
                 #     date.searchbyyear()
                     # time.sleep(10)
 
-        elif int(choice)==2:
+            elif choice==2:
                 #search by category
                 print("\rPlease input Category:")
                 Category=input()
                 os.system('cls')
                 data.SearchByCate(Category) 
                 choice=eval(msvcrt.getch())
-            
+        
 
             # DeleteTime()
             # pass

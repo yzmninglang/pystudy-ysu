@@ -18,7 +18,7 @@ def GetNowTime():
         "minute":now.minute,"timestamp":now.timestamp()}
     return time
 
-
+# print(GetNowTime())
 def GetInput_YMD():
     YMD=input("Please input Year Month and Day(Y-M-D):")
     decide =True
@@ -93,6 +93,6 @@ def Getstr(time):
     time={"YMD":time_str,"HM":h_m,"timestamp":time["timestamp"]}
     return time
 
-Getstr(GetNowTime())
+# Getstr(GetNowTime())
 
 

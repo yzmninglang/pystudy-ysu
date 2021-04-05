@@ -87,15 +87,34 @@ def TimeRecordH():
                 # time.sleep()
                 continue
         elif choice=='s':
-            print("Please enter the type you want to search?\n[1.time,2-category,3-content]:")
+            print("\rPlease enter the type you want to search?\n[1.time,2-category,3-content]:")
             choice=eval(msvcrt.getch())
             if choice==1:
-                print("Input by form [M-D or search by Y]:")
+                print("\rInput by form [M-D or search by Y]:")
+                date=input()
+                os.system('cls')
+                data.searchbytime(date) 
+                choice=eval(msvcrt.getch())
 
+#give a delete function
+                # if '-' in date :
+                #     data.searchbytime()
+                #     # time.sleep(10)
+                # else:
+                #     date.searchbyyear()
+                    # time.sleep(10)
 
-        elif choice==3:
+        elif int(choice)==2:
+                #search by category
+                print("\rPlease input Category:")
+                Category=input()
+                os.system('cls')
+                data.SearchByCate(Category) 
+                choice=eval(msvcrt.getch())
+            
+
             # DeleteTime()
-            pass
+            # pass
         elif choice==4:
             # ChangeTime()
             pass

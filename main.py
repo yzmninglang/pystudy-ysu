@@ -44,26 +44,50 @@ def decide(choice):
 def TimeRecordH():
     os.system('cls')
     choice='p'
-    i=1
+    i=0;j=10
     while choice!='q':
-        data.Datashow((0,10))
-        print("Please input what do you want to do[n-next page;s-search;p-picture;q-quit]:")
-        choice=msvcrt.getch().decode('UTF-8')  
-        # print(choice)
+        hang=data.Datashow((i,j))
+        # if i==0:
+        #     hang=data.Datashow((i,(i+1)*10))
+        # else:
+        #     hang=data.Datashow(((i-1)*10,i*10))
+        # i+=1
+        i,j=j,j+10
+        print(i)
+        print("Please input what do you want to do?\n[n-next page;s-search;p-picture;q-quit]:")
+        choice=msvcrt.getch().decode()  
+        print(choice)
         if choice=='n':
             # os.system('cls')
             try:
-                i+=1
+                # print(i)
                 # time.sleep(5)
-                print("Please input what do you want to do[n-next page;s-search;p-picture;q-quit]:")
-                data.Datashow(((i-1)*10,i*10))
-                choice=msvcrt.getch().decode('UTF-8')
+                if hang-j>10  :
+                    # print(i)
+                    # if i==1:
+                    #     data.Datashow((i,j))
+                    # else:
+                    #     data.Datashow(((i-1)*10,i*10))
+                    data.Datashow((i,j))
+                    print(i)
+                    # i+=1
+                    i,j=j,j+10
+                    print("Please input what do you want to do?\n[n-next page;s-search;p-picture;q-quit]:")
+                    choice=msvcrt.getch()
+                else:
+                    pass
+                    i=j
+                    data.Datashow((i,hang))
+                    print(i)
+                    i,j=0,10
+                    print("Please input what do you want to do?\n[n-next page;s-search;p-picture;q-quit]:")
+                    choice=msvcrt.getch().decode()
             except:
                 print("sorry,data is over")
                 # time.sleep()
                 continue
         elif choice=='s':
-            print("Please enter the type you want to search[1.time,2-category,3-content]:")
+            print("Please enter the type you want to search?\n[1.time,2-category,3-content]:")
             choice=eval(msvcrt.getch())
             if choice==1:
                 print("Input by form [M-D or search by Y]:")

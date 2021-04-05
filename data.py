@@ -15,8 +15,9 @@ def Datashow(tuple,path='./data1.csv'):
     os.system('cls')
     df = pd.read_csv('./data1.csv',index_col=None)
     print(df.iloc[tuple[0]:tuple[1],:])
+    return df.shape[0]   #pass the dateframe hang
     # time.sleep(5)
-
+print(Datashow((10,20)))
 def search():
     # print(str(cloumns[0:2]))
     print("Please input type what you want to find(1.Data;2.Cate;3.Content):")
@@ -24,7 +25,7 @@ def search():
     
 
 
-search()
+# search()
 
 def Add(begin_time,over_time,category,content):
     df = pd.read_csv('./data1.csv',index_col=0)

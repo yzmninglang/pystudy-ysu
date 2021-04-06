@@ -40,7 +40,29 @@ def searchbytime(date):
         # df=df["Date"].fillna("None")
         print(df[df['Date'].str.contains(date,na=False)])
 
-        
+def CompareContent(content) :
+    df = GetshowForm()
+    lst = list(df['Content'])
+    if content in lst:
+        return True
+    else:
+        return False
+
+
+def GetCateBycontent(content):
+    df=GetshowForm()
+    df2=df[df['Content']==content]
+    return list(df2['Category'])[0]
+# print(GetcateBycontent("余志敏"))
+
+
+
+
+
+
+# print(df)
+# print(CompareContent("学霸"))
+
     # else:
     #     # date.searchbyyear()
     #     time.sleep(10)
@@ -54,6 +76,8 @@ def Add(begin_time,over_time,category,content):
     print(sub)
     df = df.append([{'Date':'{}'.format(begin_time['YMD']),'Category':'{}'.format(category),'Time':'{}'.format(sub['name']),'Content':'{}'.format(content),'Timestamp':int(begin_time['timestamp']),'Rank':sub["Rank"]}], ignore_index=True,sort=False)
     df.to_csv('data1.csv',index=False, encoding='utf-8')
+
+
 
 def SearchByCate(Category) :
     df =GetshowForm()

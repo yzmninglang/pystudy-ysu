@@ -4,6 +4,7 @@ import os
 import csv
 import data
 import time
+import category
 def home():
     os.system('cls')
     select=[" ","1-显示时间记录","2-添加时间记录","3-删除时间记录","4-修改时间记录","5-分析时间记录","6-退出系统"]
@@ -136,8 +137,44 @@ def TimeRecordH():
 
 def AddTimeH():
     data.Datashow((0,10))
-    print("Please input ")
+    print("Please input what type data you want to enter\n[1.time,2.clock,3.date and clock]:")
+    choice=msvcrt.getch()
+    if choice==1:
+        print("Please input how much time you have cost:")
+        time=eval(input())
+        print("Please input the content of activity:")
+        content=input()
+        if judge(content):
+            addbytime(content,time,data.GetCateBycontent(content))
+        else:
+            print("Please input the Category:")
+            category=input()
 
+
+    elif choice==2:
+        print("Please input how much time you have cost:")
+        time=eval(input())
+        print("Please input the content of activity:")
+        if judge(content):
+            addbyclock(content,time,data.GetCateBycontent(content))
+        else:
+            print("Please input the Category:")
+            category=input()
+            addbyclock(content,time,data.GetCateBycontent(content))
+
+            
+
+    elif choice==3:
+        addbydate()
+# def getinputdata():
+#     data=input("Pla")
+
+
+def judge(content):
+
+
+# def addbydate():
+#     s
 
 
 

@@ -62,7 +62,10 @@ def SearchByCate(Category) :
 
 # SearchByCate("读书")
 
-
+def  SearchByContent(content):
+    df=GetshowForm()
+    print(df[df['Content'].str.contains(content,na=False)])
+    
 
 def Addbycost(begin_time,category,content):
     df = pd.read_csv('./data1.csv',index_col=0)

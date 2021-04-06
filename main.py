@@ -96,7 +96,7 @@ def TimeRecordH():
                 data.searchbytime(date) 
                 choice=eval(msvcrt.getch())
 
-#give a delete function
+                                            #give a delete function
                 # if '-' in date :
                 #     data.searchbytime()
                 #     # time.sleep(10)
@@ -111,23 +111,32 @@ def TimeRecordH():
                 os.system('cls')
                 data.SearchByCate(Category) 
                 choice=eval(msvcrt.getch())
+                if choice=='q':
+                    data.Datashow((1,10))
+
+            elif choice==3:
+                print("\rPlease input Content")
+                content=input()
+                os.system('cls')
+                data.SearchByContent(content)
+                choice=str(msvcrt.getch())
+                if choice=='q':
+                    data.Datashow((1,10))
         
 
             # DeleteTime()
             # pass
-        elif choice==4:
-            # ChangeTime()
-            pass
-        elif choice==5:
-            # AnalysisUi()
-            pass
+        elif choice=='p':
+            AnalysisUi()
+
         else :
             print("see you!")
             sys.exit()
 
 
 def AddTimeH():
-    pass
+    data.Datashow((0,10))
+    print("Please input ")
 
 
 

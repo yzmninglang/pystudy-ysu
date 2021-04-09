@@ -2,10 +2,27 @@ import msvcrt
 import sys
 import os
 import csv
+import datetime 
 # import data
 # import time
 # import category
 def home():
+
+    def decide(choice):
+        if choice==1:
+            TimeRecordH()
+        elif choice==2:
+            AddTimeH()
+        elif choice==3:
+            DeleteTime()
+        elif choice==4:
+            ChangeTime()
+        elif choice==5:
+            AnalysisUi()
+        else :
+            print("see you!")
+            sys.exit()
+
     os.system('cls')
     select=[" ","1-显示时间记录","2-添加时间记录","3-删除时间记录","4-修改时间记录","5-分析时间记录","6-退出系统"]
     print()
@@ -25,20 +42,11 @@ def home():
     # print(eval(choice))
 
 
-def decide(choice):
-    if choice==1:
-        TimeRecordH()
-    elif choice==2:
-        AddTimeH()
-    elif choice==3:
-        DeleteTime()
-    elif choice==4:
-        ChangeTime()
-    elif choice==5:
-        AnalysisUi()
-    else :
-        print("see you!")
-        sys.exit()
+def GetNowTime():
+    now=datetime.datetime.now()
+    time={"year":now.year,"month":now.month,"day":now.day,"hour":now.hour,
+        "minute":now.minute,"timestamp":now.timestamp()}
+    return time
 
 
 def AnalysisUi():
@@ -73,9 +81,168 @@ def AnalysisUi():
 
     pass
 
-def main(): 
-    home()
-main()
+# def main(): 
+#     home()
+# main()
+def display(Two_dim_arry):
+    print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
+    read=Two_dim_arry
+    for i in range(len(read)):
+        print(read[i][-1],end=" "*9)
+        for m in range(len(read[0])):
+            if m<4:
+                print(read[i][m].center(8," "),end='')
+        print('\n')
+
+
+def FetchData():# return 2d_array   
+    with open('data.csv','rt',encoding='utf-8') as csvfile:
+        read= csv.reader(csvfile)
+        read=list(read)
+    for i in range(len(read)):
+        read[i][-1]=i
+    return read
+
+#def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
+    def DecideDate(date):
+        if str(date).count('-')==1:
+            date=str(GetNowTime()['year'])+"-"+str(date)
+        else:
+            date=str(date)
+        return date
+    def SaveDate(Two_dim_arry):
+        for i in range(len(Two_dim_arry)):
+            Two_dim_arry[i][-1]=i
+        with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
+            writer  = csv.writer(csvfile)
+            for row in Two_dim_arry:
+                writer.writerow(row)
+    one_dim_list[0]=DecideDate(one_dim_list[0])
+    data=FetchData()
+    data.append(one_dim_list)
+    SaveDate(data)
+
+def AddDataUI():
+    def searchcatebycontent(content):
+        data=FetchData()
+        for i in range(len(data)):
+            if content == data[i][3]:
+                return data[i][1]
+        return False
+    def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
+        def DecideDate(date):
+            if str(date).count('-')==1:
+                date=str(GetNowTime()['year'])+"-"+str(date)
+            else:
+                date=str(date)
+            return date
+        def SaveDate(Two_dim_arry):
+            for i in range(len(Two_dim_arry)):
+                Two_dim_arry[i][-1]=i
+            with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
+                writer  = csv.writer(csvfile)
+                for row in Two_dim_arry:
+                    writer.writerow(row)
+        one_dim_list[0]=DecideDate(one_dim_list[0])
+        data=FetchData()
+        data.append(one_dim_list)
+        SaveDate(data)
+    print("Please input date(No input year default is Today ):")
+    date=input()
+    if len(date)==0:
+        Time=GetNowTime()
+        date=str(Time["year"])+'-'+str(Time["month"])+'-'+str(Time["day"])
+
+    print("Please input Time you have cost")
+    time=eval(input())
+    print("Please input Content you have to do")
+    content=input()
+    print("Please input Cate(No input will auto find database):")
+    # Cate=input()
+    while True:
+        Cate=input()
+        if len(Cate)==0:
+            if searchcatebycontent(content)!=False:
+                Cate=searchcatebycontent(content)
+                break
+            else:
+                print("sorry,I can't find it Please input cate:")
+        else:
+            break
+
+    act=[date,Cate,time,content,0]
+    AddData(act)
+    print(act)
+
+AddDataUI()
+
+
+def search():
+    def SearchBydate(date):
+        data=FetchData()
+        Ans = []
+        for i in range(len(data)):
+            if date in data[i][0]:
+                Ans.append(data[i])
+        return Ans
+    def SearchBycate(Cate):
+        data=FetchData()
+        Ans=[]
+        for i in range(len(data)):
+            if Cate in data[i][1]:
+                Ans.append(data[i])
+        return Ans
+    def SearchBycont(cont):
+        data=FetchData()
+        Ans=[]
+        for i in range(len(data)):
+            if Cate in data[i][3]:
+                Ans.append(data[i])
+        return Ans
+    Cate="跑步"
+    ans=SearchBycont(Cate)
+    display(ans)
+ 
+# AddData(["2020-5-26","娱乐",32,"打游戏",32])
+
+# search()
+
+
+# def ChangeUI():
+#     Please
+# AddData(["2023-1-21","run",23,'game'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # def TimeRecordH():
 #     os.system('cls')

@@ -145,7 +145,7 @@ def AddTimeH():
         print("Please input the content of activity:")
         content=input()
         if judge(content):
-            addbytime(,content,time,data.GetCateBycontent(content))
+            addbytime(content,time,data.GetCateBycontent(content))
         else:
             print("Please input the Category:")
             category=input()
@@ -172,7 +172,7 @@ def AddTimeH():
 
 def judge(content):
 
-    pass
+
 # def addbydate():
 #     s
 

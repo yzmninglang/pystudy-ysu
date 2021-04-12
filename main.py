@@ -102,7 +102,6 @@ def FetchData():# return 2d_array
     for i in range(len(read)):
         read[i][-1]=i
     return read
-
 #def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
     def DecideDate(date):
         if str(date).count('-')==1:
@@ -121,6 +120,118 @@ def FetchData():# return 2d_array
     data=FetchData()
     data.append(one_dim_list)
     SaveDate(data)
+
+def Sortbydate(Two_dim_arry):
+    def Changedate(Two_dim_arry):
+        def decide(time):
+            time=str(time).split("-")
+            for i in range(1,3):
+                if len(time[i])==1:
+                    # print(time)
+                    time[i]="0"+str(time[i])
+                    # print(time)
+            res = str(time[0])+'-'+str(time[1])+'-'+str(time[2])
+            return res
+                
+        for x in Two_dim_arry:
+            x[0]=decide(x[0])
+        # display(Two_dim_arry)
+        return Two_dim_arry
+    Two_dim_arry=Changedate(Two_dim_arry)
+    a=sorted(Two_dim_arry,key=(lambda x:x[0].replace('-','')[-8:]),reverse=True)
+    return a 
+    # display(Two_dim_arry)
+    # print(Two_dim_arry)
+    # display(a)
+# Sortbytime(FetchData())
+
+# display(FetchData())
+# Changedata(FetchData())
+def Sortbytime(Two_dim_arry):
+    def Changedate(Two_dim_arry):
+        def decide(time):
+            time=str(time).split("-")
+            for i in range(1,3):
+                if len(time[i])==1:
+                    # print(time)
+                    time[i]="0"+str(time[i])
+                    # print(time)
+            res = str(time[0])+'-'+str(time[1])+'-'+str(time[2])
+            return res
+                
+        for x in Two_dim_arry:
+            x[0]=decide(x[0])
+        # display(Two_dim_arry)
+        return Two_dim_arry
+    Two_dim_arry=Changedate(Two_dim_arry)
+    Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
+    display(Two_dim_arry)
+# Sortbytime(FetchData())
+    
+
+def Changedata():
+    print("Please input which data you want to change:")
+    choice=eval(input())
+    data=FetchData()
+    def ReplaceCate(content,Category):
+        def SaveData(Two_dim_arry):
+            for i in range(len(Two_dim_arry)):
+                Two_dim_arry[i][-1]=i
+            with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
+                writer  = csv.writer(csvfile)
+                for row in Two_dim_arry:
+                    writer.writerow(row)
+        data=FetchData()
+        for x in data:
+            if x[3]==content:
+                x[1]=Category
+            else :
+                continue
+        SaveData(data)
+
+    def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
+        def DecideDate(date):
+            if str(date).count('-')==1:
+                date=str(GetNowTime()['year'])+"-"+str(date)
+            else:
+                date=str(date)
+            return date
+        def SaveDate(Two_dim_arry):
+            for i in range(len(Two_dim_arry)):
+                Two_dim_arry[i][-1]=i
+            with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
+                writer  = csv.writer(csvfile)
+                for row in Two_dim_arry:
+                    writer.writerow(row)
+        one_dim_list[0]=DecideDate(one_dim_list[0])
+        data=FetchData()
+        data.append(one_dim_list)
+        SaveDate(data)
+    print("Date:{},Please input new date:".format(data[choice][0]))
+    date=input()
+    if len(date)==0:
+        date=data[choice][0]
+    print("Time:{},Please input new time:".format(data[choice][2]))
+    time=input()
+    if len(time)==0:
+        time=data[choice][2]
+    else:
+        time=int(time)
+    print("Content:{},Please input new content:".format(data[choice][3]))
+    content=input()
+    if len(content)==0:
+        content=data[choice][3]    
+    print("Category:{},Please input new Category:".format(data[choice][1]))
+    Cate=input()
+    if len(Cate)==0:
+        Cate=data[choice][1]
+    del data[choice]
+    act=[date,Cate,time,content,0]
+    deldata(choice)
+    ReplaceCate(act[3],act[1])
+    AddData(act)
+
+
 
 def AddDataUI():
     def searchcatebycontent(content):
@@ -152,7 +263,6 @@ def AddDataUI():
     if len(date)==0:
         Time=GetNowTime()
         date=str(Time["year"])+'-'+str(Time["month"])+'-'+str(Time["day"])
-
     print("Please input Time you have cost")
     time=eval(input())
     print("Please input Content you have to do")
@@ -160,16 +270,6 @@ def AddDataUI():
     if searchcatebycontent(content)==False:
         print("Please input Cate:")#
         Cate=input()
-        # while True:
-            # Cate=input()
-            # if len(Cate)==0:
-            #     if searchcatebycontent(content)!=False:
-            #         Cate=searchcatebycontent(content)
-            #         break
-            #     else:
-            #         print("sorry,I can't find it Please input cate:")
-            # else:
-            #     break
     else:
         Cate=searchcatebycontent(content)
 
@@ -177,7 +277,44 @@ def AddDataUI():
     AddData(act)
     print(act)
 
-AddDataUI()
+# AddDataUI()
+
+
+def deldata(number):
+    number=str(number)
+    # print("Please input number you want to del(or Interval):")
+    # number=input()
+    def SaveDate(Two_dim_arry):
+        for i in range(len(Two_dim_arry)):
+            Two_dim_arry[i][-1]=i
+        with open('data.csv', 'with', newline='',encoding="utf-8") as csvfile:
+            writer  = csv.writer(csvfile)
+            for row in Two_dim_arry:
+                writer.writerow(row)
+    def decide(number):
+        if '-' in number:
+            a=int(number.split('-')[0])
+            b=int(number.split('-')[1])
+            return a,b
+        else:
+            return False
+    if decide(number) ==False:
+        data=FetchData()
+        del data[int(number)]
+        SaveDate(data)
+    else:
+        begin,end=decide(number)
+        data=FetchData()
+        for i in range(begin,end+1):
+            del data[begin]
+        SaveDate(data)
+        
+display(FetchData())
+Changedata()
+
+# display(FetchData())
+# deldata()
+# display(FetchData())
 
 
 def search():

@@ -158,7 +158,7 @@ def AddDataUI():
     print("Please input Content you have to do")
     content=input()
     if searchcatebycontent(content)==False:
-        print("Please input Cate:")
+        print("Please input Cate:")#
         Cate=input()
         # while True:
             # Cate=input()

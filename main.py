@@ -157,18 +157,21 @@ def AddDataUI():
     time=eval(input())
     print("Please input Content you have to do")
     content=input()
-    print("Please input Cate(No input will auto find database):")
-    # Cate=input()
-    while True:
+    if searchcatebycontent(content)==False:
+        print("Please input Cate:")
         Cate=input()
-        if len(Cate)==0:
-            if searchcatebycontent(content)!=False:
-                Cate=searchcatebycontent(content)
-                break
-            else:
-                print("sorry,I can't find it Please input cate:")
-        else:
-            break
+        # while True:
+            # Cate=input()
+            # if len(Cate)==0:
+            #     if searchcatebycontent(content)!=False:
+            #         Cate=searchcatebycontent(content)
+            #         break
+            #     else:
+            #         print("sorry,I can't find it Please input cate:")
+            # else:
+            #     break
+    else:
+        Cate=searchcatebycontent(content)
 
     act=[date,Cate,time,content,0]
     AddData(act)

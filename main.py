@@ -3,6 +3,7 @@ import sys
 import os
 import csv
 import datetime 
+import matplotlib.pyplot as plt
 # import data
 # import time
 # import category
@@ -308,9 +309,9 @@ def deldata(number):
         for i in range(begin,end+1):
             del data[begin]
         SaveDate(data)
-        
-display(FetchData())
-Changedata()
+
+# display(FetchData())
+# Changedata()
 
 # display(FetchData())
 # deldata()
@@ -352,12 +353,47 @@ def search():
 #     Please
 # AddData(["2023-1-21","run",23,'game'])
 
+#Data visualization
+def DataVisual():
+    data=FetchData()
+    plt.rcParams['font.sans-serif']=['SimHei']
+    def Getdata(Two_dim_arry):
+        content_time={}
+        cate_time={}
+        for x in Two_dim_arry:
+           content_time[x[3]]=content_time.get(x[3],0)+int(x[2]) 
+           cate_time[x[1]]=cate_time.get(x[1],0)+int(x[2])
+        res=[content_time,cate_time]
+        return res
+    def Pie(choice,data):
+        if choice.lower()=='c':
+            labels=list(data[1].keys())
+            sizes=list(data[1].values())
+            # print(len(labels),len(sizes))
+            # print("I am here")
+            plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=150)
+            plt.show()
+        elif choice.lower()=='a':
+            labels=list(data[0].keys())
+            sizes=list(data[0].values())
+            plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=150)
+            plt.show()
+    def Rel(choice,data):
+        if choice.lower()=='c':
+            labels=list(data[1].keys())
+            sizes=list(data[1].values())
+            plt.bar(labels,sizes)
+            plt.show()
+        else:
+            labels=list(data[0].keys())
+            sizes=list(data[0].values())
+            plt.bar(labels,sizes)
+            plt.show()
 
+    data=Getdata(data)
+    Rel('c',data)
 
-
-
-
-
+DataVisual()
 
 
 

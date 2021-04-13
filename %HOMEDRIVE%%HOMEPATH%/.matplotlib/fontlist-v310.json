@@ -8,111 +8,11 @@
   },
   "ttflist": [
     {
-      "fname": "fonts\\ttf\\STIXGeneralBol.ttf",
-      "name": "STIXGeneral",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizFourSymReg.ttf",
-      "name": "STIXSizeFourSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizOneSymBol.ttf",
-      "name": "STIXSizeOneSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSans-Bold.ttf",
-      "name": "DejaVu Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSansMono.ttf",
-      "name": "DejaVu Sans Mono",
+      "fname": "fonts\\ttf\\cmmi10.ttf",
+      "name": "cmmi10",
       "style": "normal",
       "variant": "normal",
       "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSerif-BoldItalic.ttf",
-      "name": "DejaVu Serif",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmtt10.ttf",
-      "name": "cmtt10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizFiveSymReg.ttf",
-      "name": "STIXSizeFiveSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizThreeSymBol.ttf",
-      "name": "STIXSizeThreeSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSerif-Bold.ttf",
-      "name": "DejaVu Serif",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSans-BoldOblique.ttf",
-      "name": "DejaVu Sans",
-      "style": "oblique",
-      "variant": "normal",
-      "weight": "bold",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -120,186 +20,6 @@
     {
       "fname": "fonts\\ttf\\DejaVuSans-Oblique.ttf",
       "name": "DejaVu Sans",
-      "style": "oblique",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmss10.ttf",
-      "name": "cmss10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSans.ttf",
-      "name": "DejaVu Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmb10.ttf",
-      "name": "cmb10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXGeneralItalic.ttf",
-      "name": "STIXGeneral",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXGeneralBolIta.ttf",
-      "name": "STIXGeneral",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizOneSymReg.ttf",
-      "name": "STIXSizeOneSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmr10.ttf",
-      "name": "cmr10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXNonUniIta.ttf",
-      "name": "STIXNonUnicode",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmex10.ttf",
-      "name": "cmex10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSansMono-BoldOblique.ttf",
-      "name": "DejaVu Sans Mono",
-      "style": "oblique",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSansDisplay.ttf",
-      "name": "DejaVu Sans Display",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmsy10.ttf",
-      "name": "cmsy10",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizTwoSymBol.ttf",
-      "name": "STIXSizeTwoSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizTwoSymReg.ttf",
-      "name": "STIXSizeTwoSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizFourSymBol.ttf",
-      "name": "STIXSizeFourSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXSizThreeSymReg.ttf",
-      "name": "STIXSizeThreeSym",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSerif-Italic.ttf",
-      "name": "DejaVu Serif",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSansMono-Oblique.ttf",
-      "name": "DejaVu Sans Mono",
       "style": "oblique",
       "variant": "normal",
       "weight": 400,
@@ -318,48 +38,8 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\ttf\\STIXNonUniBolIta.ttf",
-      "name": "STIXNonUnicode",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXNonUni.ttf",
-      "name": "STIXNonUnicode",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\DejaVuSerif.ttf",
-      "name": "DejaVu Serif",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\STIXNonUniBol.ttf",
-      "name": "STIXNonUnicode",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\ttf\\cmmi10.ttf",
-      "name": "cmmi10",
+      "fname": "fonts\\ttf\\DejaVuSansMono.ttf",
+      "name": "DejaVu Sans Mono",
       "style": "normal",
       "variant": "normal",
       "weight": 400,
@@ -378,6 +58,286 @@
       "__class__": "FontEntry"
     },
     {
+      "fname": "fonts\\ttf\\STIXNonUniIta.ttf",
+      "name": "STIXNonUnicode",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXNonUniBolIta.ttf",
+      "name": "STIXNonUnicode",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXNonUniBol.ttf",
+      "name": "STIXNonUnicode",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizOneSymReg.ttf",
+      "name": "STIXSizeOneSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizFourSymBol.ttf",
+      "name": "STIXSizeFourSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmsy10.ttf",
+      "name": "cmsy10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSans-Bold.ttf",
+      "name": "DejaVu Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSerif-BoldItalic.ttf",
+      "name": "DejaVu Serif",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizFiveSymReg.ttf",
+      "name": "STIXSizeFiveSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSerif.ttf",
+      "name": "DejaVu Serif",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXGeneralBol.ttf",
+      "name": "STIXGeneral",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSansMono-BoldOblique.ttf",
+      "name": "DejaVu Sans Mono",
+      "style": "oblique",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSansMono-Oblique.ttf",
+      "name": "DejaVu Sans Mono",
+      "style": "oblique",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizTwoSymReg.ttf",
+      "name": "STIXSizeTwoSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSans.ttf",
+      "name": "DejaVu Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizFourSymReg.ttf",
+      "name": "STIXSizeFourSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizThreeSymReg.ttf",
+      "name": "STIXSizeThreeSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmss10.ttf",
+      "name": "cmss10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmtt10.ttf",
+      "name": "cmtt10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXGeneralBolIta.ttf",
+      "name": "STIXGeneral",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmb10.ttf",
+      "name": "cmb10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXNonUni.ttf",
+      "name": "STIXNonUnicode",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizOneSymBol.ttf",
+      "name": "STIXSizeOneSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSans-BoldOblique.ttf",
+      "name": "DejaVu Sans",
+      "style": "oblique",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSansDisplay.ttf",
+      "name": "DejaVu Sans Display",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXSizTwoSymBol.ttf",
+      "name": "STIXSizeTwoSym",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\DejaVuSerif-Bold.ttf",
+      "name": "DejaVu Serif",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmr10.ttf",
+      "name": "cmr10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
       "fname": "fonts\\ttf\\DejaVuSerifDisplay.ttf",
       "name": "DejaVu Serif Display",
       "style": "normal",
@@ -388,108 +348,8 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\palabi.ttf",
-      "name": "Palatino Linotype",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\taile.ttf",
-      "name": "Microsoft Tai Le",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\trebucbd.ttf",
-      "name": "Trebuchet MS",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\marlett.ttf",
-      "name": "Marlett",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\georgia.ttf",
-      "name": "Georgia",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\msyi.ttf",
-      "name": "Microsoft Yi Baiti",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\consolab.ttf",
-      "name": "Consolas",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\seguiemj.ttf",
-      "name": "Segoe UI Emoji",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\consola.ttf",
-      "name": "Consolas",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\YuGothL.ttc",
-      "name": "Yu Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\trebucit.ttf",
-      "name": "Trebuchet MS",
+      "fname": "fonts\\ttf\\DejaVuSerif-Italic.ttf",
+      "name": "DejaVu Serif",
       "style": "italic",
       "variant": "normal",
       "weight": 400,
@@ -498,9 +358,39 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\tahomabd.ttf",
-      "name": "Tahoma",
+      "fname": "fonts\\ttf\\STIXSizThreeSymBol.ttf",
+      "name": "STIXSizeThreeSym",
       "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\cmex10.ttf",
+      "name": "cmex10",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\ttf\\STIXGeneralItalic.ttf",
+      "name": "STIXGeneral",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\verdanaz.ttf",
+      "name": "Verdana",
+      "style": "italic",
       "variant": "normal",
       "weight": "bold",
       "stretch": "normal",
@@ -518,71 +408,11 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\segoeuib.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\MTEXTRA.TTF",
-      "name": "MT Extra",
-      "style": "normal",
+      "fname": "C:\\Windows\\Fonts\\Candarai.ttf",
+      "name": "Candara",
+      "style": "italic",
       "variant": "normal",
       "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\webdings.ttf",
-      "name": "Webdings",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\constan.ttf",
-      "name": "Constantia",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\comicbd.ttf",
-      "name": "Comic Sans MS",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\verdana.ttf",
-      "name": "Verdana",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\ariblk.ttf",
-      "name": "Arial",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "black",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -598,1281 +428,11 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\seguisb.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "semibold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\ebrimabd.ttf",
-      "name": "Ebrima",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Candarali.ttf",
-      "name": "Candara",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Candaraz.ttf",
-      "name": "Candara",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\sylfaen.ttf",
-      "name": "Sylfaen",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Arvo-BoldItalic.ttf",
-      "name": "Arvo",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\calibri.ttf",
-      "name": "Calibri",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\pala.ttf",
-      "name": "Palatino Linotype",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\impact.ttf",
-      "name": "Impact",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\YuGothR.ttc",
-      "name": "Yu Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\verdanai.ttf",
-      "name": "Verdana",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\msyh.ttc",
-      "name": "Microsoft YaHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\YuGothM.ttc",
-      "name": "Yu Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\\u5b57\u9b4270\u53f7-\u7075\u60a6\u9ed1\u4f53.ttf",
-      "name": "zihun70hao-lingyueheiti",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\verdanab.ttf",
-      "name": "Verdana",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\NirmalaB.ttf",
-      "name": "Nirmala UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\segmdl2.ttf",
-      "name": "Segoe MDL2 Assets",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\gadugib.ttf",
-      "name": "Gadugi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\simfang.ttf",
-      "name": "FangSong",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\comici.ttf",
-      "name": "Comic Sans MS",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\holomdl2.ttf",
-      "name": "HoloLens MDL2 Assets",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\seguisli.ttf",
-      "name": "Segoe UI",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\mmrtextb.ttf",
-      "name": "Myanmar Text",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Medium.ttf",
-      "name": "Alibaba PuHuiTi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\palai.ttf",
-      "name": "Palatino Linotype",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Candarab.ttf",
-      "name": "Candara",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\arialbd.ttf",
-      "name": "Arial",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\mingliub.ttc",
-      "name": "MingLiU-ExtB",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\segoesc.ttf",
-      "name": "Segoe Script",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\himalaya.ttf",
-      "name": "Microsoft Himalaya",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\segoeprb.ttf",
-      "name": "Segoe Print",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\ebrima.ttf",
-      "name": "Ebrima",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Inkfree.ttf",
-      "name": "Ink Free",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\calibriz.ttf",
-      "name": "Calibri",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\trebuc.ttf",
-      "name": "Trebuchet MS",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Gabriola.ttf",
-      "name": "Gabriola",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\SitkaZ.ttc",
-      "name": "Sitka Small",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Sitka.ttc",
-      "name": "Sitka Small",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\couri.ttf",
-      "name": "Courier New",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\segoeuil.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\consolaz.ttf",
-      "name": "Consolas",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\seguili.ttf",
-      "name": "Segoe UI",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\courbi.ttf",
-      "name": "Courier New",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Medium.otf",
-      "name": "Alibaba Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\palab.ttf",
-      "name": "Palatino Linotype",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Italic.otf",
-      "name": "Alibaba Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\HPSimplified_BdIt.ttf",
-      "name": "HP Simplified",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\simhei.ttf",
-      "name": "SimHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\YuGothB.ttc",
+      "fname": "C:\\Windows\\Fonts\\YuGothB.ttc",
       "name": "Yu Gothic",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\msjhbd.ttc",
-      "name": "Microsoft JhengHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\verdanaz.ttf",
-      "name": "Verdana",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\HPSimplified_LtIt.ttf",
-      "name": "HP Simplified",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\cambria.ttc",
-      "name": "Cambria",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Dengb.ttf",
-      "name": "DengXian",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\LeelaUIb.ttf",
-      "name": "Leelawadee UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\msgothic.ttc",
-      "name": "MS Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\SitkaB.ttc",
-      "name": "Sitka Small",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\arialbi.ttf",
-      "name": "Arial",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\RobotoCondensed-BoldItalic.ttf",
-      "name": "Roboto Condensed",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\cour.ttf",
-      "name": "Courier New",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\ntailub.ttf",
-      "name": "Microsoft New Tai Lue",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-HeavyItalic.otf",
-      "name": "Alibaba Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "heavy",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\gadugi.ttf",
-      "name": "Gadugi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\comicz.ttf",
-      "name": "Comic Sans MS",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\phagspa.ttf",
-      "name": "Microsoft PhagsPa",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\segoeuii.ttf",
-      "name": "Segoe UI",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\calibrili.ttf",
-      "name": "Calibri",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\ariali.ttf",
-      "name": "Arial",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\msjh.ttc",
-      "name": "Microsoft JhengHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\l_10646.ttf",
-      "name": "Lucida Sans Unicode",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\segoeui.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\seguibl.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "black",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\cambriab.ttf",
-      "name": "Cambria",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\corbelli.ttf",
-      "name": "Corbel",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\HPSimplified_Bd.ttf",
-      "name": "HP Simplified",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\framdit.ttf",
-      "name": "Franklin Gothic Medium",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\segoeuisl.ttf",
-      "name": "Segoe UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\tahoma.ttf",
-      "name": "Tahoma",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\seguibli.ttf",
-      "name": "Segoe UI",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "black",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\simsun.ttc",
-      "name": "SimSun",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-MediumItalic.otf",
-      "name": "Alibaba Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\SitkaI.ttc",
-      "name": "Sitka Small",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Regular.otf",
-      "name": "Alibaba Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Roboto-Italic.ttf",
-      "name": "Roboto",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\msjhl.ttc",
-      "name": "Microsoft JhengHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\OpenSans-Italic.ttf",
-      "name": "Open Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\seguihis.ttf",
-      "name": "Segoe UI Historic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\calibrib.ttf",
-      "name": "Calibri",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\mmrtext.ttf",
-      "name": "Myanmar Text",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\constanb.ttf",
-      "name": "Constantia",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\corbel.ttf",
-      "name": "Corbel",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\symbol.ttf",
-      "name": "Symbol",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Heavy.ttf",
-      "name": "Alibaba PuHuiTi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "heavy",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\timesbd.ttf",
-      "name": "Times New Roman",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "roman",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Black.otf",
-      "name": "Alibaba Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "black",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\DroidSerif-Bold.ttf",
-      "name": "Droid Serif",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Roboto-BoldItalic.ttf",
-      "name": "Roboto",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\RobotoCondensed-Italic.ttf",
-      "name": "Roboto Condensed",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\OpenSans-Bold.ttf",
-      "name": "Open Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\calibrii.ttf",
-      "name": "Calibri",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Heavy.otf",
-      "name": "Alibaba Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "heavy",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\calibril.ttf",
-      "name": "Calibri",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\consolai.ttf",
-      "name": "Consolas",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\segoescb.ttf",
-      "name": "Segoe Script",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\msyhl.ttc",
-      "name": "Microsoft YaHei",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\seguisbi.ttf",
-      "name": "Segoe UI",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "semibold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\segoepr.ttf",
-      "name": "Segoe Print",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\constani.ttf",
-      "name": "Constantia",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\simsunb.ttf",
-      "name": "SimSun-ExtB",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\HPSimplified_Lt.ttf",
-      "name": "HP Simplified",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\constanz.ttf",
-      "name": "Constantia",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\simkai.ttf",
-      "name": "KaiTi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Arvo-Bold.ttf",
-      "name": "Arvo",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\corbelb.ttf",
-      "name": "Corbel",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\wonderwall-webfont.ttf",
-      "name": "wonderwall ",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\malgunbd.ttf",
-      "name": "Malgun Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Candarai.ttf",
-      "name": "Candara",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Light.ttf",
-      "name": "Alibaba PuHuiTi",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Deng.ttf",
-      "name": "DengXian",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "regular",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\malgunsl.ttf",
-      "name": "Malgun Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\HPSimplified_Rg.ttf",
-      "name": "HP Simplified",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\NirmalaS.ttf",
-      "name": "Nirmala UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\LeelawUI.ttf",
-      "name": "Leelawadee UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\javatext.ttf",
-      "name": "Javanese Text",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\wingding.ttf",
-      "name": "Wingdings",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\courbd.ttf",
-      "name": "Courier New",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\cambriaz.ttf",
-      "name": "Cambria",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\LeelUIsl.ttf",
-      "name": "Leelawadee UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -1888,198 +448,8 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\OpenSans-BoldItalic.ttf",
-      "name": "Open Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\micross.ttf",
-      "name": "Microsoft Sans Serif",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Light.otf",
-      "name": "Alibaba Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\seguisym.ttf",
-      "name": "Segoe UI Symbol",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\RobotoCondensed-Bold.ttf",
-      "name": "Roboto Condensed",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\DroidSerif-Italic.ttf",
-      "name": "Droid Serif",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\timesbi.ttf",
-      "name": "Times New Roman",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "roman",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\georgiai.ttf",
-      "name": "Georgia",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\lucon.ttf",
-      "name": "Lucida Console",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Bistro Serif (Slant).ttf",
-      "name": "Bistro Serif",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\ntailu.ttf",
-      "name": "Microsoft New Tai Lue",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\corbell.ttf",
-      "name": "Corbel",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\malgun.ttf",
+      "fname": "C:\\windows\\Fonts\\malgunbd.ttf",
       "name": "Malgun Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\comic.ttf",
-      "name": "Comic Sans MS",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Nirmala.ttf",
-      "name": "Nirmala UI",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\framd.ttf",
-      "name": "Franklin Gothic Medium",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\taileb.ttf",
-      "name": "Microsoft Tai Le",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\times.ttf",
-      "name": "Times New Roman",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "roman",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\monbaiti.ttf",
-      "name": "Mongolian Baiti",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\msyhbd.ttc",
-      "name": "Microsoft YaHei",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
@@ -2098,6 +468,206 @@
       "__class__": "FontEntry"
     },
     {
+      "fname": "C:\\windows\\Fonts\\segoeui.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\corbel.ttf",
+      "name": "Corbel",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\tahomabd.ttf",
+      "name": "Tahoma",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\HPSimplified_BdIt.ttf",
+      "name": "HP Simplified",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\micross.ttf",
+      "name": "Microsoft Sans Serif",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\himalaya.ttf",
+      "name": "Microsoft Himalaya",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\marlett.ttf",
+      "name": "Marlett",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Heavy.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "heavy",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\constanb.ttf",
+      "name": "Constantia",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\mingliub.ttc",
+      "name": "MingLiU-ExtB",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\OpenSans-BoldItalic.ttf",
+      "name": "Open Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\calibrib.ttf",
+      "name": "Calibri",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\HPSimplified_Bd.ttf",
+      "name": "HP Simplified",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\timesbd.ttf",
+      "name": "Times New Roman",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "roman",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\taileb.ttf",
+      "name": "Microsoft Tai Le",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\OpenSans-Italic.ttf",
+      "name": "Open Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\comic.ttf",
+      "name": "Comic Sans MS",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\lucon.ttf",
+      "name": "Lucida Console",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Heavy.ttf",
+      "name": "Alibaba PuHuiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "heavy",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\tahoma.ttf",
+      "name": "Tahoma",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
       "fname": "C:\\windows\\Fonts\\Arvo-Italic.ttf",
       "name": "Arvo",
       "style": "italic",
@@ -2108,8 +678,98 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\RobotoSlab-Bold.ttf",
-      "name": "Roboto Slab",
+      "fname": "C:\\windows\\Fonts\\corbell.ttf",
+      "name": "Corbel",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\YuGothM.ttc",
+      "name": "Yu Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\NirmalaS.ttf",
+      "name": "Nirmala UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguisb.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "semibold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\SitkaZ.ttc",
+      "name": "Sitka Small",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\l_10646.ttf",
+      "name": "Lucida Sans Unicode",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\\u8e42\u8e8f\u592a\u884c.ttf",
+      "name": "????",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\consolaz.ttf",
+      "name": "Consolas",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\calibril.ttf",
+      "name": "Calibri",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\msyhbd.ttc",
+      "name": "Microsoft YaHei",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
@@ -2118,7 +778,47 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\windows\\Fonts\\trebucbi.ttf",
+      "fname": "C:\\Windows\\Fonts\\consolai.ttf",
+      "name": "Consolas",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\arialbd.ttf",
+      "name": "Arial",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Candaraz.ttf",
+      "name": "Candara",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\msyh.ttc",
+      "name": "Microsoft YaHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\trebucbi.ttf",
       "name": "Trebuchet MS",
       "style": "italic",
       "variant": "normal",
@@ -2128,99 +828,49 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Windows\\Fonts\\georgiab.ttf",
-      "name": "Georgia",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\Raleway-Bold.ttf",
-      "name": "Raleway",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\georgiaz.ttf",
-      "name": "Georgia",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\mvboli.ttf",
-      "name": "MV Boli",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Bistro Sans (Fill).ttf",
-      "name": "Bistro Sans",
-      "style": "normal",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-LightItalic.otf",
-      "name": "Alibaba Sans",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\HPSimplified_It.ttf",
-      "name": "HP Simplified",
-      "style": "italic",
-      "variant": "normal",
-      "weight": 400,
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\Windows\\Fonts\\Dengl.ttf",
-      "name": "DengXian",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "C:\\windows\\Fonts\\cambriai.ttf",
+      "fname": "C:\\windows\\Fonts\\cambriaz.ttf",
       "name": "Cambria",
       "style": "italic",
       "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Arvo-Bold.ttf",
+      "name": "Arvo",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\framdit.ttf",
+      "name": "Franklin Gothic Medium",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\segoepr.ttf",
+      "name": "Segoe Print",
+      "style": "normal",
+      "variant": "normal",
       "weight": 400,
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Windows\\Fonts\\corbelz.ttf",
-      "name": "Corbel",
-      "style": "italic",
+      "fname": "C:\\windows\\Fonts\\segoeuib.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
       "variant": "normal",
       "weight": "bold",
       "stretch": "normal",
@@ -2228,11 +878,31 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Bold.otf",
-      "name": "Alibaba Sans",
+      "fname": "C:\\Windows\\Fonts\\seguisbi.ttf",
+      "name": "Segoe UI",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "semibold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\HPSimplified_Lt.ttf",
+      "name": "HP Simplified",
       "style": "normal",
       "variant": "normal",
-      "weight": "bold",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\constan.ttf",
+      "name": "Constantia",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2248,9 +918,69 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Windows\\Fonts\\bahnschrift.ttf",
-      "name": "Bahnschrift",
+      "fname": "C:\\windows\\Fonts\\HPSimplified_Rg.ttf",
+      "name": "HP Simplified",
       "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\RobotoCondensed-Italic.ttf",
+      "name": "Roboto Condensed",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "condensed",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\calibriz.ttf",
+      "name": "Calibri",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\monbaiti.ttf",
+      "name": "Mongolian Baiti",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\wingding.ttf",
+      "name": "Wingdings",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\ariali.ttf",
+      "name": "Arial",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\SitkaI.ttc",
+      "name": "Sitka Small",
+      "style": "italic",
       "variant": "normal",
       "weight": 400,
       "stretch": "normal",
@@ -2268,8 +998,308 @@
       "__class__": "FontEntry"
     },
     {
+      "fname": "C:\\Windows\\Fonts\\mmrtext.ttf",
+      "name": "Myanmar Text",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\ntailub.ttf",
+      "name": "Microsoft New Tai Lue",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\timesbi.ttf",
+      "name": "Times New Roman",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "roman",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\cambriai.ttf",
+      "name": "Cambria",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\times.ttf",
+      "name": "Times New Roman",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "roman",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\impact.ttf",
+      "name": "Impact",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\trebucit.ttf",
+      "name": "Trebuchet MS",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\HPSimplified_It.ttf",
+      "name": "HP Simplified",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\segoeuil.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\mvboli.ttf",
+      "name": "MV Boli",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguisli.ttf",
+      "name": "Segoe UI",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\LeelUIsl.ttf",
+      "name": "Leelawadee UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
       "fname": "C:\\Windows\\Fonts\\phagspab.ttf",
       "name": "Microsoft PhagsPa",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\couri.ttf",
+      "name": "Courier New",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\Gabriola.ttf",
+      "name": "Gabriola",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\YuGothL.ttc",
+      "name": "Yu Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\mmrtextb.ttf",
+      "name": "Myanmar Text",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Bold.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\webdings.ttf",
+      "name": "Webdings",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguili.ttf",
+      "name": "Segoe UI",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguibli.ttf",
+      "name": "Segoe UI",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "black",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\YuGothR.ttc",
+      "name": "Yu Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\Candarab.ttf",
+      "name": "Candara",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\Nirmala.ttf",
+      "name": "Nirmala UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Regular.ttf",
+      "name": "Alibaba PuHuiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\simhei.ttf",
+      "name": "SimHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Italic.otf",
+      "name": "Alibaba Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\courbd.ttf",
+      "name": "Courier New",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\segoeuisl.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\consola.ttf",
+      "name": "Consolas",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\SitkaB.ttc",
+      "name": "Sitka Small",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
@@ -2288,8 +1318,28 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Windows\\Fonts\\Candara.ttf",
-      "name": "Candara",
+      "fname": "C:\\Windows\\Fonts\\framd.ttf",
+      "name": "Franklin Gothic Medium",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\georgiai.ttf",
+      "name": "Georgia",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\trebuc.ttf",
+      "name": "Trebuchet MS",
       "style": "normal",
       "variant": "normal",
       "weight": 400,
@@ -2298,18 +1348,28 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-BoldItalic.otf",
-      "name": "Alibaba Sans",
-      "style": "italic",
+      "fname": "C:\\windows\\Fonts\\ariblk.ttf",
+      "name": "Arial",
+      "style": "normal",
       "variant": "normal",
-      "weight": "bold",
+      "weight": "black",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Bold.ttf",
-      "name": "Alibaba PuHuiTi",
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-MediumItalic.otf",
+      "name": "Alibaba Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\georgiab.ttf",
+      "name": "Georgia",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
@@ -2318,8 +1378,78 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\\u8e42\u8e8f\u592a\u884c.ttf",
-      "name": "????",
+      "fname": "C:\\windows\\Fonts\\malgun.ttf",
+      "name": "Malgun Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\msyhl.ttc",
+      "name": "Microsoft YaHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\javatext.ttf",
+      "name": "Javanese Text",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguiemj.ttf",
+      "name": "Segoe UI Emoji",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\Deng.ttf",
+      "name": "DengXian",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\pala.ttf",
+      "name": "Palatino Linotype",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\corbelz.ttf",
+      "name": "Corbel",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguisym.ttf",
+      "name": "Segoe UI Symbol",
       "style": "normal",
       "variant": "normal",
       "weight": 400,
@@ -2338,20 +1468,198 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Regular.ttf",
-      "name": "Alibaba PuHuiTi",
+      "fname": "C:\\windows\\Fonts\\taile.ttf",
+      "name": "Microsoft Tai Le",
       "style": "normal",
       "variant": "normal",
       "weight": 400,
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
-    }
-  ],
-  "afmlist": [
+    },
     {
-      "fname": "fonts\\afm\\putr8a.afm",
-      "name": "Utopia",
+      "fname": "C:\\Windows\\Fonts\\palabi.ttf",
+      "name": "Palatino Linotype",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\bahnschrift.ttf",
+      "name": "Bahnschrift",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\simfang.ttf",
+      "name": "FangSong",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\MTEXTRA.TTF",
+      "name": "MT Extra",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Dengl.ttf",
+      "name": "DengXian",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Candarali.ttf",
+      "name": "Candara",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Medium.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Inkfree.ttf",
+      "name": "Ink Free",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\DroidSerif-Bold.ttf",
+      "name": "Droid Serif",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\DroidSerif-Italic.ttf",
+      "name": "Droid Serif",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\courbi.ttf",
+      "name": "Courier New",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\msjh.ttc",
+      "name": "Microsoft JhengHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\sylfaen.ttf",
+      "name": "Sylfaen",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\trebucbd.ttf",
+      "name": "Trebuchet MS",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Regular.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\simkai.ttf",
+      "name": "KaiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Bold.ttf",
+      "name": "Alibaba PuHuiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\symbol.ttf",
+      "name": "Symbol",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\wonderwall-webfont.ttf",
+      "name": "wonderwall ",
       "style": "normal",
       "variant": "normal",
       "weight": "regular",
@@ -2360,8 +1668,28 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\ptmb8a.afm",
-      "name": "Times",
+      "fname": "C:\\windows\\Fonts\\LeelawUI.ttf",
+      "name": "Leelawadee UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\HPSimplified_LtIt.ttf",
+      "name": "HP Simplified",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\segoeprb.ttf",
+      "name": "Segoe Print",
       "style": "normal",
       "variant": "normal",
       "weight": "bold",
@@ -2370,9 +1698,661 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pagko8a.afm",
-      "name": "ITC Avant Garde Gothic",
+      "fname": "C:\\Windows\\Fonts\\LeelaUIb.ttf",
+      "name": "Leelawadee UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\constani.ttf",
+      "name": "Constantia",
       "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\comicbd.ttf",
+      "name": "Comic Sans MS",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Bistro Serif (Slant).ttf",
+      "name": "Bistro Serif",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\corbelli.ttf",
+      "name": "Corbel",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\arialbi.ttf",
+      "name": "Arial",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Light.ttf",
+      "name": "Alibaba PuHuiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\OpenSans-Bold.ttf",
+      "name": "Open Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\comicz.ttf",
+      "name": "Comic Sans MS",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\seguihis.ttf",
+      "name": "Segoe UI Historic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\georgia.ttf",
+      "name": "Georgia",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Roboto-Italic.ttf",
+      "name": "Roboto",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\constanz.ttf",
+      "name": "Constantia",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\RobotoCondensed-Bold.ttf",
+      "name": "Roboto Condensed",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "condensed",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\holomdl2.ttf",
+      "name": "HoloLens MDL2 Assets",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\corbelb.ttf",
+      "name": "Corbel",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\msgothic.ttc",
+      "name": "MS Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\ebrima.ttf",
+      "name": "Ebrima",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\Dengb.ttf",
+      "name": "DengXian",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\consolab.ttf",
+      "name": "Consolas",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\msyi.ttf",
+      "name": "Microsoft Yi Baiti",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\calibrii.ttf",
+      "name": "Calibri",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Candara.ttf",
+      "name": "Candara",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Sitka.ttc",
+      "name": "Sitka Small",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\msjhbd.ttc",
+      "name": "Microsoft JhengHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\comici.ttf",
+      "name": "Comic Sans MS",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\msjhl.ttc",
+      "name": "Microsoft JhengHei",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\malgunsl.ttf",
+      "name": "Malgun Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\segoesc.ttf",
+      "name": "Segoe Script",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\verdanai.ttf",
+      "name": "Verdana",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\calibri.ttf",
+      "name": "Calibri",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Black.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "black",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\gadugi.ttf",
+      "name": "Gadugi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\cambria.ttc",
+      "name": "Cambria",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\simsunb.ttf",
+      "name": "SimSun-ExtB",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\NirmalaB.ttf",
+      "name": "Nirmala UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\ebrimabd.ttf",
+      "name": "Ebrima",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\segoeuii.ttf",
+      "name": "Segoe UI",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-Light.otf",
+      "name": "Alibaba Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\RobotoCondensed-BoldItalic.ttf",
+      "name": "Roboto Condensed",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "condensed",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Alibaba-PuHuiTi-Medium.ttf",
+      "name": "Alibaba PuHuiTi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\verdanab.ttf",
+      "name": "Verdana",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\ntailu.ttf",
+      "name": "Microsoft New Tai Lue",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-HeavyItalic.otf",
+      "name": "Alibaba Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "heavy",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\Bistro Sans (Fill).ttf",
+      "name": "Bistro Sans",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Raleway-Bold.ttf",
+      "name": "Raleway",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\cambriab.ttf",
+      "name": "Cambria",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\palai.ttf",
+      "name": "Palatino Linotype",
+      "style": "italic",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\georgiaz.ttf",
+      "name": "Georgia",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\verdana.ttf",
+      "name": "Verdana",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\cour.ttf",
+      "name": "Courier New",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\simsun.ttc",
+      "name": "SimSun",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\palab.ttf",
+      "name": "Palatino Linotype",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\segoescb.ttf",
+      "name": "Segoe Script",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Roboto-BoldItalic.ttf",
+      "name": "Roboto",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\\u5b57\u9b4270\u53f7-\u7075\u60a6\u9ed1\u4f53.ttf",
+      "name": "zihun70hao-lingyueheiti",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-LightItalic.otf",
+      "name": "Alibaba Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\seguibl.ttf",
+      "name": "Segoe UI",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "black",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\segmdl2.ttf",
+      "name": "Segoe MDL2 Assets",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\RobotoSlab-Bold.ttf",
+      "name": "Roboto Slab",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\Arvo-BoldItalic.ttf",
+      "name": "Arvo",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\gadugib.ttf",
+      "name": "Gadugi",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\windows\\Fonts\\phagspa.ttf",
+      "name": "Microsoft PhagsPa",
+      "style": "normal",
+      "variant": "normal",
+      "weight": 400,
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Users\\ninglang\\AppData\\Local\\Microsoft\\Windows\\Fonts\\AlibabaSans-BoldItalic.otf",
+      "name": "Alibaba Sans",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "C:\\Windows\\Fonts\\calibrili.ttf",
+      "name": "Calibri",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    }
+  ],
+  "afmlist": [
+    {
+      "fname": "fonts\\afm\\pagk8a.afm",
+      "name": "ITC Avant Garde Gothic",
+      "style": "normal",
       "variant": "normal",
       "weight": "book",
       "stretch": "normal",
@@ -2380,78 +2360,8 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\phvlo8a.afm",
+      "fname": "fonts\\afm\\phvr8a.afm",
       "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Helvetica-BoldOblique.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pbkd8a.afm",
-      "name": "ITC Bookman",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "demi",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pplb8a.afm",
-      "name": "Palatino",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvr8an.afm",
-      "name": "Helvetica",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvl8a.afm",
-      "name": "Helvetica",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "light",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Courier-Oblique.afm",
-      "name": "Courier",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\cmr10.afm",
-      "name": "Computer Modern",
       "style": "normal",
       "variant": "normal",
       "weight": "medium",
@@ -2470,118 +2380,8 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\phvbo8an.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvbo8a.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pagk8a.afm",
-      "name": "ITC Avant Garde Gothic",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "book",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pncr8a.afm",
-      "name": "New Century Schoolbook",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "roman",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\ZapfDingbats.afm",
-      "name": "ZapfDingbats",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Symbol.afm",
-      "name": "Symbol",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pbkdi8a.afm",
-      "name": "ITC Bookman",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "demi",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Times-BoldItalic.afm",
+      "fname": "fonts\\afm\\ptmbi8a.afm",
       "name": "Times",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pcrr8a.afm",
-      "name": "Courier",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\cmsy10.afm",
-      "name": "Computer Modern",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Times-Bold.afm",
-      "name": "Times",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pplbi8a.afm",
-      "name": "Palatino",
       "style": "italic",
       "variant": "normal",
       "weight": "bold",
@@ -2600,31 +2400,11 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\psyr.afm",
-      "name": "Symbol",
+      "fname": "fonts\\afm\\pplr8a.afm",
+      "name": "Palatino",
       "style": "normal",
       "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pncb8a.afm",
-      "name": "New Century Schoolbook",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\ptmbi8a.afm",
-      "name": "Times",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "bold",
+      "weight": "roman",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2640,8 +2420,28 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pplr8a.afm",
-      "name": "Palatino",
+      "fname": "fonts\\afm\\pbkl8a.afm",
+      "name": "ITC Bookman",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pncb8a.afm",
+      "name": "New Century Schoolbook",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\ptmr8a.afm",
+      "name": "Times",
       "style": "normal",
       "variant": "normal",
       "weight": "roman",
@@ -2650,11 +2450,21 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\putb8a.afm",
-      "name": "Utopia",
+      "fname": "fonts\\afm\\pcrr8a.afm",
+      "name": "Courier",
       "style": "normal",
       "variant": "normal",
-      "weight": "bold",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\putri8a.afm",
+      "name": "Utopia",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "regular",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2670,7 +2480,87 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\cmex10.afm",
+      "fname": "fonts\\pdfcorefonts\\Times-Italic.afm",
+      "name": "Times",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvlo8a.afm",
+      "name": "Helvetica",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pcrro8a.afm",
+      "name": "Courier",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvbo8an.afm",
+      "name": "Helvetica",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "condensed",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pncr8a.afm",
+      "name": "New Century Schoolbook",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "roman",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvro8a.afm",
+      "name": "Helvetica",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Symbol.afm",
+      "name": "Symbol",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvl8a.afm",
+      "name": "Helvetica",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "light",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\cmr10.afm",
       "name": "Computer Modern",
       "style": "normal",
       "variant": "normal",
@@ -2680,21 +2570,71 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pbkli8a.afm",
-      "name": "ITC Bookman",
+      "fname": "fonts\\afm\\phvro8an.afm",
+      "name": "Helvetica",
       "style": "italic",
       "variant": "normal",
-      "weight": "light",
+      "weight": "medium",
+      "stretch": "condensed",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\psyr.afm",
+      "name": "Symbol",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\cmmi10.afm",
-      "name": "Computer Modern",
+      "fname": "fonts\\pdfcorefonts\\Courier-BoldOblique.afm",
+      "name": "Courier",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Helvetica-Oblique.afm",
+      "name": "Helvetica",
       "style": "italic",
       "variant": "normal",
       "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Times-Bold.afm",
+      "name": "Times",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvb8a.afm",
+      "name": "Helvetica",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pbkdi8a.afm",
+      "name": "ITC Bookman",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "demi",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2710,12 +2650,92 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\ptmri8a.afm",
-      "name": "Times",
+      "fname": "fonts\\afm\\pagd8a.afm",
+      "name": "ITC Avant Garde Gothic",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "demi",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Courier-Bold.afm",
+      "name": "Courier",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Courier-Oblique.afm",
+      "name": "Courier",
       "style": "italic",
       "variant": "normal",
       "weight": "medium",
       "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\cmsy10.afm",
+      "name": "Computer Modern",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pplri8a.afm",
+      "name": "Palatino",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\putr8a.afm",
+      "name": "Utopia",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "regular",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Helvetica.afm",
+      "name": "Helvetica",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\ZapfDingbats.afm",
+      "name": "ZapfDingbats",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\phvr8an.afm",
+      "name": "Helvetica",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "condensed",
       "size": "scalable",
       "__class__": "FontEntry"
     },
@@ -2730,9 +2750,69 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\pdfcorefonts\\Helvetica.afm",
-      "name": "Helvetica",
+      "fname": "fonts\\pdfcorefonts\\Times-Roman.afm",
+      "name": "Times",
       "style": "normal",
+      "variant": "normal",
+      "weight": "roman",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pbkd8a.afm",
+      "name": "ITC Bookman",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "demi",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\ptmri8a.afm",
+      "name": "Times",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pzcmi8a.afm",
+      "name": "ITC Zapf Chancery",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "medium",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\pdfcorefonts\\Helvetica-BoldOblique.afm",
+      "name": "Helvetica",
+      "style": "italic",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pcrb8a.afm",
+      "name": "Courier",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\cmmi10.afm",
+      "name": "Computer Modern",
+      "style": "italic",
       "variant": "normal",
       "weight": "medium",
       "stretch": "normal",
@@ -2750,9 +2830,19 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pbkl8a.afm",
-      "name": "ITC Bookman",
+      "fname": "fonts\\afm\\pplb8a.afm",
+      "name": "Palatino",
       "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\pbkli8a.afm",
+      "name": "ITC Bookman",
+      "style": "italic",
       "variant": "normal",
       "weight": "light",
       "stretch": "normal",
@@ -2760,21 +2850,21 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\putri8a.afm",
-      "name": "Utopia",
+      "fname": "fonts\\pdfcorefonts\\Times-BoldItalic.afm",
+      "name": "Times",
       "style": "italic",
       "variant": "normal",
-      "weight": "regular",
+      "weight": "bold",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pagd8a.afm",
-      "name": "ITC Avant Garde Gothic",
-      "style": "normal",
+      "fname": "fonts\\afm\\phvbo8a.afm",
+      "name": "Helvetica",
+      "style": "italic",
       "variant": "normal",
-      "weight": "demi",
+      "weight": "bold",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2800,9 +2890,9 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\pdfcorefonts\\Courier-BoldOblique.afm",
-      "name": "Courier",
-      "style": "italic",
+      "fname": "fonts\\afm\\ptmb8a.afm",
+      "name": "Times",
+      "style": "normal",
       "variant": "normal",
       "weight": "bold",
       "stretch": "normal",
@@ -2810,9 +2900,19 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pcrro8a.afm",
-      "name": "Courier",
-      "style": "italic",
+      "fname": "fonts\\afm\\putb8a.afm",
+      "name": "Utopia",
+      "style": "normal",
+      "variant": "normal",
+      "weight": "bold",
+      "stretch": "normal",
+      "size": "scalable",
+      "__class__": "FontEntry"
+    },
+    {
+      "fname": "fonts\\afm\\cmex10.afm",
+      "name": "Computer Modern",
+      "style": "normal",
       "variant": "normal",
       "weight": "medium",
       "stretch": "normal",
@@ -2820,101 +2920,21 @@
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\afm\\pplri8a.afm",
+      "fname": "fonts\\afm\\pplbi8a.afm",
       "name": "Palatino",
       "style": "italic",
       "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Times-Roman.afm",
-      "name": "Times",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "roman",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pcrb8a.afm",
-      "name": "Courier",
-      "style": "normal",
-      "variant": "normal",
       "weight": "bold",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
     },
     {
-      "fname": "fonts\\pdfcorefonts\\Times-Italic.afm",
-      "name": "Times",
+      "fname": "fonts\\afm\\pagko8a.afm",
+      "name": "ITC Avant Garde Gothic",
       "style": "italic",
       "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvb8a.afm",
-      "name": "Helvetica",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\pzcmi8a.afm",
-      "name": "ITC Zapf Chancery",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvro8an.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "condensed",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Courier-Bold.afm",
-      "name": "Courier",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "bold",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\pdfcorefonts\\Helvetica-Oblique.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvro8a.afm",
-      "name": "Helvetica",
-      "style": "italic",
-      "variant": "normal",
-      "weight": "medium",
+      "weight": "book",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"
@@ -2925,26 +2945,6 @@
       "style": "normal",
       "variant": "normal",
       "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\phvr8a.afm",
-      "name": "Helvetica",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "medium",
-      "stretch": "normal",
-      "size": "scalable",
-      "__class__": "FontEntry"
-    },
-    {
-      "fname": "fonts\\afm\\ptmr8a.afm",
-      "name": "Times",
-      "style": "normal",
-      "variant": "normal",
-      "weight": "roman",
       "stretch": "normal",
       "size": "scalable",
       "__class__": "FontEntry"

@@ -3,10 +3,10 @@ import sys
 import os
 import csv
 import datetime 
+import numpy as np
 import matplotlib.pyplot as plt
-# import data
-# import time
-# import category
+import matplotlib
+
 def home():
 
     def decide(choice):
@@ -82,9 +82,7 @@ def AnalysisUi():
 
     pass
 
-# def main(): 
-#     home()
-# main()
+
 def display(Two_dim_arry):
     print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
     read=Two_dim_arry
@@ -103,7 +101,7 @@ def FetchData():# return 2d_array
     for i in range(len(read)):
         read[i][-1]=i
     return read
-#def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
+    #def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
     def DecideDate(date):
         if str(date).count('-')==1:
             date=str(GetNowTime()['year'])+"-"+str(date)
@@ -144,10 +142,8 @@ def Sortbydate(Two_dim_arry):
     # display(Two_dim_arry)
     # print(Two_dim_arry)
     # display(a)
-# Sortbytime(FetchData())
 
-# display(FetchData())
-# Changedata(FetchData())
+
 def Sortbytime(Two_dim_arry):
     def Changedate(Two_dim_arry):
         def decide(time):
@@ -167,8 +163,7 @@ def Sortbytime(Two_dim_arry):
     Two_dim_arry=Changedate(Two_dim_arry)
     Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
     display(Two_dim_arry)
-# Sortbytime(FetchData())
-    
+
 
 def Changedata():
     print("Please input which data you want to change:")
@@ -278,8 +273,6 @@ def AddDataUI():
     AddData(act)
     print(act)
 
-# AddDataUI()
-
 
 def deldata(number):
     number=str(number)
@@ -310,12 +303,6 @@ def deldata(number):
             del data[begin]
         SaveDate(data)
 
-# display(FetchData())
-# Changedata()
-
-# display(FetchData())
-# deldata()
-# display(FetchData())
 
 
 def search():
@@ -344,6 +331,136 @@ def search():
     ans=SearchBycont(Cate)
     display(ans)
  
+
+
+def DataVisual(char):
+    data=FetchData()
+
+    plt.rcParams['font.sans-serif']=['SimHei']
+    def Getdata(Two_dim_arry):
+        content_time={}
+        cate_time={}
+        for x in Two_dim_arry:
+           content_time[x[3]]=content_time.get(x[3],0)+int(x[2]) 
+           cate_time[x[1]]=cate_time.get(x[1],0)+int(x[2])
+        res=[content_time,cate_time]
+        return res
+    def Pie(data):
+
+            labels=list(data[1].keys())
+            sizes=list(data[1].values())
+            out=sizes.index(max(sizes))
+            basic=[0 for i in range(len(sizes))]
+            basic[out]=0.1
+            axes1=plt.subplot(1,2,1)
+            explode = tuple(basic)
+            axes1.set_title("Category-Time Pie",fontdict={"fontsize":16,"color":"blue"})
+            plt.pie(sizes,labels=labels,explode=explode,autopct='%1.1f%%',shadow=True,startangle=150)
+            labels=list(data[0].keys())
+            sizes=list(data[0].values())
+            out=sizes.index(max(sizes))
+            basic=[0 for i in range(len(sizes))]
+            basic[out]=0.1
+            axes2=plt.subplot(1,2,2)
+            explode = tuple(basic)
+            axes2.set_title("Content-Time Pie",fontdict={"fontsize":16,"color":"blue"})
+            plt.pie(sizes,explode=explode,labels=labels,autopct='%1.1f%%',shadow=True,startangle=150)
+            plt.show()
+    def Rel(data):
+            labels=list(data[1].keys())
+            sizes=list(data[1].values())
+            axes1=plt.subplot(1,2,1)
+            axes1.set_title("Category-Time Pie",fontdict={"fontsize":16,"color":"blue"})
+            plt.bar(labels,sizes)
+            labels=list(data[0].keys())
+            sizes=list(data[0].values())
+            axes2=plt.subplot(1,2,2)
+            axes2.set_title("Content-Time Pie",fontdict={"fontsize":16,"color":"blue"})
+            plt.bar(labels,sizes)
+            plt.show()
+    def Radar(datas):
+            matplotlib.rcParams['font.family']='SimHei'
+            matplotlib.rcParams["font.sans-serif"]='SimHei'
+            labels=list(datas[1].keys())
+            sizes=list(datas[1].values())
+            axes1=plt.subplot(1,2,1,polar=True)
+            size=len(sizes)
+            data=np.array(sizes)
+            angle=np.linspace(0,2*np.pi,size,endpoint=False)
+            data=np.concatenate((data,[data[0]]))
+            angle=np.concatenate((angle,[angle[0]]))
+            plt.plot(angle,data,'bo-',color='g',linewidth=2)
+            plt.fill(angle,data,facecolor='g',alpha=0.25)
+            plt.thetagrids(angle*180/np.pi,labels)
+            # plt.figtext(0.25,0.95,'Category-Time Radar',ha='center')
+            axes1.set_title("Category-Time Radar",fontdict={"fontsize":13,"color":"blue"})
+            #second picture
+            plt.grid(True)
+            labels=list(datas[0].keys())
+            sizes=list(datas[0].values())
+            axes2=plt.subplot(1,2,2,polar=True)
+            size=len(sizes)
+            data=np.array(sizes)
+            angle=np.linspace(0,2*np.pi,size,endpoint=False)
+            data=np.concatenate((data,[data[0]]))
+            angle=np.concatenate((angle,[angle[0]]))
+            plt.plot(angle,data,'bo-',color='g',linewidth=2)
+            plt.fill(angle,data,facecolor='g',alpha=0.25)
+            plt.thetagrids(angle*180/np.pi,labels)
+            axes2.set_title("Content-Time Radar",fontdict={"fontsize":13,"color":"blue"})
+            plt.show()
+    data=Getdata(data)
+    if char=='pie':
+        Pie(data)
+    elif char=='rel':
+        Rel(data)
+    elif char=='radar':
+        Radar(data)
+
+
+
+
+
+
+
+
+
+
+
+# def main(): 
+#     home()
+# main()
+
+
+
+
+# Sortbytime(FetchData())
+
+# display(FetchData())
+# Changedata(FetchData())
+
+
+# Sortbytime(FetchData())
+    
+
+
+
+
+# AddDataUI()
+
+
+# display(FetchData())
+# Changedata()
+
+# display(FetchData())
+# deldata()
+# display(FetchData())
+
+
+
+
+
+
 # AddData(["2020-5-26","娱乐",32,"打游戏",32])
 
 # search()
@@ -354,46 +471,7 @@ def search():
 # AddData(["2023-1-21","run",23,'game'])
 
 #Data visualization
-def DataVisual():
-    data=FetchData()
-    plt.rcParams['font.sans-serif']=['SimHei']
-    def Getdata(Two_dim_arry):
-        content_time={}
-        cate_time={}
-        for x in Two_dim_arry:
-           content_time[x[3]]=content_time.get(x[3],0)+int(x[2]) 
-           cate_time[x[1]]=cate_time.get(x[1],0)+int(x[2])
-        res=[content_time,cate_time]
-        return res
-    def Pie(choice,data):
-        if choice.lower()=='c':
-            labels=list(data[1].keys())
-            sizes=list(data[1].values())
-            # print(len(labels),len(sizes))
-            # print("I am here")
-            plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=150)
-            plt.show()
-        elif choice.lower()=='a':
-            labels=list(data[0].keys())
-            sizes=list(data[0].values())
-            plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=150)
-            plt.show()
-    def Rel(choice,data):
-        if choice.lower()=='c':
-            labels=list(data[1].keys())
-            sizes=list(data[1].values())
-            plt.bar(labels,sizes)
-            plt.show()
-        else:
-            labels=list(data[0].keys())
-            sizes=list(data[0].values())
-            plt.bar(labels,sizes)
-            plt.show()
-
-    data=Getdata(data)
-    Rel('c',data)
-
-DataVisual()
+# DataVisual('radar')
 
 
 
@@ -419,7 +497,9 @@ DataVisual()
 
 
 
-
+# import data
+# import time
+# import category
 # def TimeRecordH():
 #     os.system('cls')
 #     choice='p'

@@ -13,6 +13,7 @@ def display(Two_dim_arry):
         for m in range(len(read[0])):
             print(read[i][m].center(8," "),end='')
         print('\n')
+        
 with open('data.csv','rt',encoding='utf-8') as csvfile:
     read= csv.reader(csvfile)
     read=list(read)

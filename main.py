@@ -6,7 +6,8 @@ import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
-
+import requests
+import json
 def home():
 
     def decide(choice):
@@ -42,13 +43,33 @@ def home():
     decide(eval(choice))
     # print(eval(choice))
 
+def TimeRecordH():
+    def insearch():
+        print("Please input what type you want to search(1.Cate,2.Date,3.Act):")
+        choice=msvcrt.getch()
+    data=FetchData()
+    choice=''
+    n=0
+    while len(choice)==0 or choice== '\n':
+        os.system('cls')
+        display(data[n:n+10])
+        print("Press Enter to next page(s to search):")
+        choice=msvcrt.getch().decode()
+        print(choice)
+        if n+10<len(data):
+            n=n+10
+        else:
+            n=0
+    if str(choice)=='s':
+        insearch()
+
+    
 
 def GetNowTime():
     now=datetime.datetime.now()
     time={"year":now.year,"month":now.month,"day":now.day,"hour":now.hour,
         "minute":now.minute,"timestamp":now.timestamp()}
     return time
-
 
 def AnalysisUi():
     os.system('cls')
@@ -82,7 +103,6 @@ def AnalysisUi():
 
     pass
 
-
 def display(Two_dim_arry):
     print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
     read=Two_dim_arry
@@ -95,13 +115,32 @@ def display(Two_dim_arry):
 
 
 def FetchData():# return 2d_array   
+    def Changedate(Two_dim_arry):
+        def decide(time):
+            time=str(time).split("-")
+            for i in range(1,3):
+                if len(time[i])==1:
+                    # print(time)
+                    time[i]="0"+str(time[i])
+                    # print(time)
+            res = str(time[0])+'-'+str(time[1])+'-'+str(time[2])
+            return res
+                
+        for x in Two_dim_arry:
+            x[0]=decide(x[0])
+        # display(Two_dim_arry)
+        return Two_dim_arry
     with open('data.csv','rt',encoding='utf-8') as csvfile:
         read= csv.reader(csvfile)
         read=list(read)
     for i in range(len(read)):
         read[i][-1]=i
+    read=Changedate(read)
+
     return read
-    #def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
+
+
+def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
     def DecideDate(date):
         if str(date).count('-')==1:
             date=str(GetNowTime()['year'])+"-"+str(date)
@@ -143,7 +182,6 @@ def Sortbydate(Two_dim_arry):
     # print(Two_dim_arry)
     # display(a)
 
-
 def Sortbytime(Two_dim_arry):
     def Changedate(Two_dim_arry):
         def decide(time):
@@ -163,7 +201,6 @@ def Sortbytime(Two_dim_arry):
     Two_dim_arry=Changedate(Two_dim_arry)
     Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
     display(Two_dim_arry)
-
 
 def Changedata():
     print("Please input which data you want to change:")
@@ -227,8 +264,6 @@ def Changedata():
     ReplaceCate(act[3],act[1])
     AddData(act)
 
-
-
 def AddDataUI():
     def searchcatebycontent(content):
         data=FetchData()
@@ -273,7 +308,6 @@ def AddDataUI():
     AddData(act)
     print(act)
 
-
 def deldata(number):
     number=str(number)
     # print("Please input number you want to del(or Interval):")
@@ -303,9 +337,7 @@ def deldata(number):
             del data[begin]
         SaveDate(data)
 
-
-
-def search():
+def search(type,string):
     def SearchBydate(date):
         data=FetchData()
         Ans = []
@@ -327,12 +359,17 @@ def search():
             if Cate in data[i][3]:
                 Ans.append(data[i])
         return Ans
-    Cate="跑步"
-    ans=SearchBycont(Cate)
-    display(ans)
+    if type=="date":
+        return SearchBydate(string)
+    elif type=="Cate":
+        return SearchBycate(string)
+    elif type=="cont":
+        return SearchBycont(string)
+
+    # Cate="跑步"
+    # ans=SearchBycont(Cate)
+    # display(ans)
  
-
-
 def DataVisual(char):
     data=FetchData()
 
@@ -417,13 +454,65 @@ def DataVisual(char):
     elif char=='radar':
         Radar(data)
 
+# def TimeRecordUi():
+#     pass
+        
+def SecondWechat(filetype):
+    def send_data(companyid,appid,secret):
+        def uploadimg(filename, access_token):
+            from requests_toolbelt import MultipartEncoder
+            
+            post_file_url = f"https://qyapi.weixin.qq.com/cgi-bin/media/upload?access_token={access_token}&type=file"
+            if filetype=="image":
+                m =MultipartEncoder(  {"filename":"1.png","file": ('1.png', open(filename, 'rb'),'text/plain')})
+            elif filetype=="csv":
+                m=MultipartEncoder(  {"filename":"data.csv","file": ('data.csv', open("data.csv", 'rb'),'text/plain')})
+            # print(m.content_type)
+            # print(m.content_length)
+            r = requests.post(url=post_file_url, data=m, headers={'Content-Type': m.content_type})
+            r=json.loads(r.text)
+            # print(r)
+            return r["media_id"]
+        def gettoken():
+                url="https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}".format(companyid,secret)
+                mes=json.loads(requests.get(url=url).text)
+                token=mes["access_token"]
+                return token
+        send_url = 'https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=' + gettoken()
+        if filetype=="image":
+            send_values = {
+                "touser": "@all",
+                #"toparty": self.TOPARY,    #设置给部门发送
+                "msgtype": "image",
+                "agentid": appid,
+                "image": {
+                "media_id": uploadimg("1.png",gettoken())
+                },
+                "safe": "0"
+            }
+        else:
+            send_values = {
+                "touser": "@all",
+                #"toparty": self.TOPARY,    #设置给部门发送
+                "msgtype": "file",
+                "agentid": appid,
+                "file": {
+                "media_id": uploadimg("data.csv",gettoken())
+                },
+                "safe": "0"
+            }
+        send_msges=(bytes(json.dumps(send_values), 'utf-8'))
+        respone = requests.post(send_url, send_msges)
+        respone = respone.json()
+        return respone["errmsg"]
 
 
 
+    send_data(companyid,appid,secret)
+home()
+# SecondWechat("csv")
 
-
-
-
+# def TimeRecordH():
 
 
 

@@ -2,6 +2,7 @@ import msvcrt
 import sys
 import os
 import csv
+import time
 import datetime 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -44,24 +45,77 @@ def home():
     # print(eval(choice))
 
 def TimeRecordH():
+    choice=0
     def insearch():
-        print("Please input what type you want to search(1.Cate,2.Date,3.Act):")
-        choice=msvcrt.getch()
-    data=FetchData()
-    choice=''
-    n=0
-    while len(choice)==0 or choice== '\n':
-        os.system('cls')
-        display(data[n:n+10])
-        print("Press Enter to next page(s to search):")
-        choice=msvcrt.getch().decode()
-        print(choice)
-        if n+10<len(data):
-            n=n+10
-        else:
-            n=0
-    if str(choice)=='s':
-        insearch()
+        choice=0
+        while choice not in (1,2,3):
+            print("Please input what type you want to search(1.Cate,2.Date,3.Act):")
+            choice=eval(msvcrt.getch())
+        if choice==1:
+            print("Please input Cate:")
+            cate=input()
+            list_=search(string=cate,type_="cate")
+            display(list_)
+
+        elif choice==2:
+            print("Please input Date:")
+            date=input()
+            list_=search(string=date,type_="date")
+            display(list_)
+        elif choice==3:
+            print("Please input activity:")
+            act=input()
+            list_=search(string=act,type_="cont")
+            display(list_)
+    def indelete():
+        print("Please input the number you want to delete(or Interval):")
+        numbers=input()
+        deldata(number=numbers)
+        choice()
+    def inadd():
+        AddDataUI()
+        choice()
+    def insend():
+        i=0
+        while i<3:
+            try:
+                SecondWechat("csv")
+                i=4
+            except:
+                i=i+1
+                print("The {} Time,sorry,it have something wrong!".format(i))
+                time.sleep(1)
+        choice()
+    def choice():
+        data=FetchData()
+        choice=''
+        n=0
+        while len(choice)==0 or choice== '\n':
+            os.system('cls')
+            display(data[n:n+10])
+            print("Press Enter to next page(s to search):")
+            choice=input()
+            # print(choice)
+            if n+10<len(data):
+                n=n+10
+            else:
+                n=0
+        if choice=='s':
+            insearch()
+        if choice=='d':
+            indelete()
+        if choice=='a':
+            inadd()
+        if choice=="w":
+            insend()
+        if choice=="p":
+            inpicture()
+            pass
+    
+
+
+    choice()
+    # elif choice
 
     
 
@@ -104,6 +158,7 @@ def AnalysisUi():
     pass
 
 def display(Two_dim_arry):
+    os.system('cls')
     print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
     read=Two_dim_arry
     for i in range(len(read)):
@@ -306,7 +361,7 @@ def AddDataUI():
 
     act=[date,Cate,time,content,0]
     AddData(act)
-    print(act)
+    # print(act)
 
 def deldata(number):
     number=str(number)
@@ -315,7 +370,7 @@ def deldata(number):
     def SaveDate(Two_dim_arry):
         for i in range(len(Two_dim_arry)):
             Two_dim_arry[i][-1]=i
-        with open('data.csv', 'with', newline='',encoding="utf-8") as csvfile:
+        with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
             writer  = csv.writer(csvfile)
             for row in Two_dim_arry:
                 writer.writerow(row)
@@ -337,7 +392,7 @@ def deldata(number):
             del data[begin]
         SaveDate(data)
 
-def search(type,string):
+def search(type_,string):
     def SearchBydate(date):
         data=FetchData()
         Ans = []
@@ -356,14 +411,14 @@ def search(type,string):
         data=FetchData()
         Ans=[]
         for i in range(len(data)):
-            if Cate in data[i][3]:
+            if cont in data[i][3]:
                 Ans.append(data[i])
         return Ans
-    if type=="date":
+    if type_=="date":
         return SearchBydate(string)
-    elif type=="Cate":
+    elif type_=="cate":
         return SearchBycate(string)
-    elif type=="cont":
+    elif type_=="cont":
         return SearchBycont(string)
 
     # Cate="跑步"
@@ -505,7 +560,6 @@ def SecondWechat(filetype):
         respone = requests.post(send_url, send_msges)
         respone = respone.json()
         return respone["errmsg"]
-
 
 
     send_data(companyid,appid,secret)

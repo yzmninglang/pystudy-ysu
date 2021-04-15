@@ -4,3 +4,6 @@ wq.py
 __pycache__/
 access_token.conf
 secret.txt
+token.json
+dist/
+build/

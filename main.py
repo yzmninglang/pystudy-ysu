@@ -9,6 +9,39 @@ import matplotlib.pyplot as plt
 import matplotlib
 import requests
 import json
+
+
+sort=True
+def decidedate(date_string):
+    month_decide=False
+    date_decide=False
+    date=date_string.split('-')
+    try:
+        if len(date)==2:
+            month=int(date[0])
+            day=int(date[1])
+            if month<=12 and month>0:
+                month_decide=True
+            if day<=31 and day>0:
+                day_decide=True
+            if day_decide and month_decide:
+                return True
+            else:
+                return False
+        if len(date)==3:
+            month=int(date[1])
+            day=int(date[2])
+            if month<=12 and month>0:
+                month_decide=True
+            if day<=31 and day>0:
+                day_decide=True
+            if day_decide and month_decide:
+                return True
+            else:
+                return False
+    except:
+        return False
+
 def home():
 
     def decide(choice):
@@ -22,7 +55,9 @@ def home():
             ChangeTime()
         elif choice==5:
             AnalysisUi()
-        else :
+        elif choice==6:
+            if os.path.exists("./1.png"):
+                os.remove("./1.png")
             print("see you!")
             sys.exit()
 
@@ -40,66 +75,256 @@ def home():
             print("            |","{}".format(select[i//2-1]).center(17),"|")
         elif i==14 :
                                     print("            |","{}".format(select[i//2-1]).center(19),"|")    
-    choice=msvcrt.getch()
+    choice=''
+    while choice not in ("1","2","3","4","5","6"):
+        choice=msvcrt.getch()
+        choice=str(choice,encoding='utf-8')
+
     decide(eval(choice))
     # print(eval(choice))
+
+def ChangeTime():
+    def insearch():
+        choice=0
+        while choice not in (1,2,3):
+            print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
+            try:
+                choice=eval(msvcrt.getch())
+            except:
+                continue
+        if choice==1:
+            cate=""
+            while cate!='q':
+                print("Please input Cate:")
+                cate=input()
+                list_=search(string=cate,type_="cate")
+                display(list_)
+                break
+            # DeleteTime()
+
+        elif choice==2:
+            date=""
+            while date!='q' :
+                print("Please input Date:")
+                date=input()
+                if decidedate(date)==True:
+                    list_=search(string=date,type_="date")
+                    display(list_)
+                    break
+            # DeleteTime()
+        elif choice==3:
+            act=''
+            while act!='q':
+                print("Please input activity:")
+                act=input()
+                list_=search(string=act,type_="cont")
+                display(list_)
+                break
+    choice=''
+    while choice!='q':
+        display(FetchData())
+        select=''
+        while select not in ("Y","N","y","n",'q'):
+            print("whether to filter?(Y/N)")
+            select=str(msvcrt.getch(),encoding="utf-8")
+        if select in ("y","Y"):
+            insearch()
+        try:
+            if Changedata()==False:
+                break
+        except:
+            continue
+    home()
+
+def DeleteTime():
+    def insearch():
+        choice=0
+        while choice not in (1,2,3):
+            print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
+            try:
+                choice=eval(msvcrt.getch())
+            except:
+                continue
+        if choice==1:
+            cate=""
+            while cate!='q':
+                print("Please input Cate:")
+                cate=input()
+                list_=search(string=cate,type_="cate")
+                display(list_)
+                break
+            # DeleteTime()
+
+        elif choice==2:
+            date=""
+            while date!='q' :
+                print("Please input Date:")
+                date=input()
+                if decidedate(date)==True:
+                    list_=search(string=date,type_="date")
+                    display(list_)
+                    break
+            # DeleteTime()
+        elif choice==3:
+            act=''
+            while act!='q':
+                print("Please input activity:")
+                act=input()
+                list_=search(string=act,type_="cont")
+                display(list_)
+                break
+            # DeleteTime()
+    def decideinterval(two_number_string):
+        list_=two_number_string.split("-")
+        print(list_)
+        print(len(FetchData()))
+        try:
+            if int(list_[0])<=(len(FetchData())-1) and int(list_[1])<=(len(FetchData())-1):
+                # print("Hello!")
+                # input()
+                return True
+            # print("1")
+            # input()
+            return False
+        except:
+            # print("2")
+            # input()
+            return False
+    while True:
+        os.system("cls")
+        display(FetchData())
+        select=''
+        while select not in ("Y","N","y","n",'q'):
+            print("whether to filter?(Y/N)")
+            select=str(msvcrt.getch(),encoding="utf-8")
+        if select in ("y","Y"):
+            insearch() 
+        print("Please input the number you want to delete(or Interval):")
+        choice=input()
+        if choice=='q':
+            break
+        else:
+            try:
+                # print(choice)
+                a=int(choice)
+                # input()
+                # print()
+                if a>len(FetchData())-1:
+                    continue
+            except:
+                if decideinterval(choice)==True:
+                    deldata(choice)
+                continue
+            deldata(choice)
+    home()
+
+def AddTimeH():
+    a=True
+    while a!=False:
+        os.system('cls')
+        a=AddDataUI()
+    home()
 
 def TimeRecordH():
     choice=0
     def insearch():
         choice=0
         while choice not in (1,2,3):
-            print("Please input what type you want to search(1.Cate,2.Date,3.Act):")
-            choice=eval(msvcrt.getch())
+            print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
+            try:
+                choice=eval(msvcrt.getch())
+            except:
+                continue
         if choice==1:
-            print("Please input Cate:")
-            cate=input()
-            list_=search(string=cate,type_="cate")
-            display(list_)
+            cate=""
+            while cate!='q':
+                print("Please input Cate:")
+                cate=input()
+                list_=search(string=cate,type_="cate")
+                choices(list_)
+            choices()
 
         elif choice==2:
-            print("Please input Date:")
-            date=input()
-            list_=search(string=date,type_="date")
-            display(list_)
+            date=""
+            while date!='q' :
+                print("Please input Date:")
+                date=input()
+                if decidedate(date)==True:
+                    list_=search(string=date,type_="date")
+                    choices(list_)
+            choices()
+
         elif choice==3:
-            print("Please input activity:")
-            act=input()
-            list_=search(string=act,type_="cont")
-            display(list_)
+            act=''
+            while act!='q':
+                print("Please input activity:")
+                act=input()
+                list_=search(string=act,type_="cont")
+                choices(list_)
+            choices()
     def indelete():
         print("Please input the number you want to delete(or Interval):")
         numbers=input()
         deldata(number=numbers)
-        choice()
+        choices()
     def inadd():
-        AddDataUI()
-        choice()
+        a=True
+        while a!=False :
+            a=AddDataUI()
+            if a==True:
+                a=False
+
+        choices(data=FetchData())
     def insend():
         i=0
         while i<3:
             try:
-                SecondWechat("csv")
+                SendWechat("csv")
                 i=4
             except:
                 i=i+1
                 print("The {} Time,sorry,it have something wrong!".format(i))
                 time.sleep(1)
-        choice()
-    def choice():
-        data=FetchData()
+        choices() 
+    def inpicture():
+        res=AnalysisUi()
+        if res==False:
+            choices(FetchData())
+    def insort():
+        global sort
+        print("Please input what type you want to sort(1.date,2.time):")
+        choice=''
+        while choice not in (1,2) :
+            choice=eval(msvcrt.getch())
+        if choice==1:
+            sort_list=Sortbydate(FetchData())
+        else:
+            sort_list=Sortbytime(FetchData())
+        sort=bool(1-sort)
+        choices(sort_list)
+
+    def inchange():
+        Changedata()
+        choices(FetchData())
+    def choices(data=FetchData()):
+        # data=FetchData()
         choice=''
         n=0
-        while len(choice)==0 or choice== '\n':
+        choice=''
+        while choice not in ('s','d','a','w','p','u','c','q'):
+            
             os.system('cls')
             display(data[n:n+10])
-            print("Press Enter to next page(s to search):")
-            choice=input()
+            print("Press Enter to next page(s:\"search\";d:\"delete\";a:\"add\";w:\"wechat\";\np:\"visual\";u:\"sort\";c:\"change\";q:\"quit\"):")
+            choice=str(msvcrt.getch(),encoding="utf-8")
             # print(choice)
-            if n+10<len(data):
-                n=n+10
-            else:
-                n=0
+            if choice=='\r':
+                if n+10<len(data):
+                    n=n+10
+                else:
+                    n=0
+        if choice=='q':
+            home()
         if choice=='s':
             insearch()
         if choice=='d':
@@ -110,14 +335,18 @@ def TimeRecordH():
             insend()
         if choice=="p":
             inpicture()
-            pass
+        if choice=="h":
+            choices()
+        if choice=="u":
+            insort()
+        if choice=='c':
+            inchange()
+        
     
 
 
-    choice()
+    choices()
     # elif choice
-
-    
 
 def GetNowTime():
     now=datetime.datetime.now()
@@ -126,36 +355,94 @@ def GetNowTime():
     return time
 
 def AnalysisUi():
-    os.system('cls')
-    select=[" ","1-时饼图","2-雷达图","3-柱形图","4-主界面"]
-    print()
-    for i in range(0,12):
-        if i in (0,11):
-            print("             {:^10s}".format('='*25))
-        elif i==1:
-            print("            |","{}".format("分析时间记录").center(14),"   |")
-        elif i%2==1 or i==2:
-            print("            {0}                         {0}".format("|"))
-        elif i!=9:
-            print("            |","{}".format(select[i//2-1]).center(17),"   |")
-        elif i==9   :
-                                    print("            |","{}".format(select[i//2-1]).center(19),"|")    
-    choice=eval(msvcrt.getch())
-    if choice ==1:
-        pass
-        # Piechart()s
-    elif choice==3:
-        pass
-        # Barchart()
-    elif choice==2:
-        pass
-        # Radar()
-    else:
+    res=AnalysisUi_back()
+    if res==False:
         home()
-    # decide(choice)
-    # print(eval(choice))
 
-    pass
+def AnalysisUi_back():
+    while True:
+        os.system('cls')
+        select=[" ","1-时饼图","2-雷达图","3-柱形图","4-主界面"]
+        print()
+        for i in range(0,12):
+            if i in (0,11):
+                print("             {:^10s}".format('='*25))
+            elif i==1:
+                print("            |","{}".format("分析时间记录").center(14),"   |")
+            elif i%2==1 or i==2:
+                print("            {0}                         {0}".format("|"))
+            elif i!=9:
+                print("            |","{}".format(select[i//2-1]).center(17),"   |")
+            elif i==9   :
+                                        print("            |","{}".format(select[i//2-1]).center(19),"|")    
+        choice=msvcrt.getch()
+        choice_q=str(choice,encoding="utf-8")
+        if choice_q=='q':
+            return False
+        while choice_q=='\r':
+            choice=msvcrt.getch()
+            choice_q=str(choice,encoding="utf-8")
+        choice=eval(choice_q)
+        if choice ==1:
+            DataVisual("pie")
+            while True:
+                try:
+                    print("Do you want to send this picture to your wechat?")
+                    print("0.No\n1.Yes")
+                    a=eval(msvcrt.getch())
+                    break
+                except:
+                    continue
+            if a==1:
+                i=0
+                while i<3:
+                    try:
+                        SendWechat("image")
+                        i=4
+                    except:
+                        i=i+1
+        elif choice==3:
+            DataVisual("rel")
+            while True:
+                try:
+                    print("Do you want to send this picture to your wechat?")
+                    print("0.No\n1.Yes")
+                    a=eval(msvcrt.getch())
+                    break
+                except:
+                    continue
+            if a==1:
+                i=0
+                while i<3:
+                    try:
+                        SendWechat("image")
+                        i=4
+                    except:
+                        i=i+1
+        elif choice==2:
+            DataVisual("radar")
+            while True:
+                try:
+                    print("Do you want to send this picture to your wechat?")
+                    print("0.No\n1.Yes")
+                    a=eval(msvcrt.getch())
+                    break
+                except:
+                    continue
+            if a==1:
+                i=0
+                while i<3:
+                    try:
+                        SendWechat("image")
+                        i=4
+                    except:
+                        i=i+1
+        elif choice==4:
+            home()
+        else :
+            TimeRecordH()
+        # decide(choice)
+        # print(eval(choice))
 
 def display(Two_dim_arry):
     os.system('cls')
@@ -167,7 +454,6 @@ def display(Two_dim_arry):
             if m<4:
                 print(read[i][m].center(8," "),end='')
         print('\n')
-
 
 def FetchData():# return 2d_array   
     def Changedate(Two_dim_arry):
@@ -185,15 +471,17 @@ def FetchData():# return 2d_array
             x[0]=decide(x[0])
         # display(Two_dim_arry)
         return Two_dim_arry
-    with open('data.csv','rt',encoding='utf-8') as csvfile:
-        read= csv.reader(csvfile)
-        read=list(read)
-    for i in range(len(read)):
-        read[i][-1]=i
-    read=Changedate(read)
+    if os.path.exists('./data.csv')==True:
+        with open('data.csv','rt',encoding='utf-8') as csvfile:
+            read= csv.reader(csvfile)
+            read=list(read)
+        for i in range(len(read)):
+            read[i][-1]=i
+        read=Changedate(read)
+    else:
+        read=[]
 
     return read
-
 
 def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
     def DecideDate(date):
@@ -210,7 +498,10 @@ def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about d
             for row in Two_dim_arry:
                 writer.writerow(row)
     one_dim_list[0]=DecideDate(one_dim_list[0])
-    data=FetchData()
+    if os.path.exists("data.csv")==True and os.path.getsize("data.csv")!=0:
+        data=FetchData()
+    else:
+        data=[]
     data.append(one_dim_list)
     SaveDate(data)
 
@@ -231,7 +522,11 @@ def Sortbydate(Two_dim_arry):
         # display(Two_dim_arry)
         return Two_dim_arry
     Two_dim_arry=Changedate(Two_dim_arry)
-    a=sorted(Two_dim_arry,key=(lambda x:x[0].replace('-','')[-8:]),reverse=True)
+    if sort==True:
+        a=sorted(Two_dim_arry,key=(lambda x:x[0].replace('-','')[-8:]),reverse=True)
+    else:
+        a=sorted(Two_dim_arry,key=(lambda x:x[0].replace('-','')[-8:]),reverse=False)
+
     return a 
     # display(Two_dim_arry)
     # print(Two_dim_arry)
@@ -254,12 +549,18 @@ def Sortbytime(Two_dim_arry):
         # display(Two_dim_arry)
         return Two_dim_arry
     Two_dim_arry=Changedate(Two_dim_arry)
-    Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
-    display(Two_dim_arry)
+    if sort==True:
+        Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
+    else:
+        Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=False)
+    return Two_dim_arry
 
 def Changedata():
     print("Please input which data you want to change:")
-    choice=eval(input())
+    choice=input()
+    if choice=='q':
+        return False
+    choice=eval(choice)
     data=FetchData()
     def ReplaceCate(content,Category):
         def SaveData(Two_dim_arry):
@@ -295,12 +596,27 @@ def Changedata():
         data=FetchData()
         data.append(one_dim_list)
         SaveDate(data)
-    print("Date:{},Please input new date:".format(data[choice][0]))
-    date=input()
+    
+    date='m'
+    while len(date)!=0:
+        print("Date:{},Please input new date:".format(data[choice][0]))
+        date=input()
+        if decidedate(date):
+            break
     if len(date)==0:
         date=data[choice][0]
-    print("Time:{},Please input new time:".format(data[choice][2]))
-    time=input()
+    
+    time=-1
+    while True :
+        try:
+            print("Time:{},Please input new time:".format(data[choice][2]))
+            time=input()
+            if len(time)==0:
+                break
+            test=eval(time)
+            break
+        except:
+            continue
     if len(time)==0:
         time=data[choice][2]
     else:
@@ -344,18 +660,36 @@ def AddDataUI():
         data=FetchData()
         data.append(one_dim_list)
         SaveDate(data)
-    print("Please input date(No input year default is Today ):")
-    date=input()
-    if len(date)==0:
-        Time=GetNowTime()
-        date=str(Time["year"])+'-'+str(Time["month"])+'-'+str(Time["day"])
-    print("Please input Time you have cost")
-    time=eval(input())
-    print("Please input Content you have to do")
-    content=input()
+    date=''
+    while decidedate(date)!=True:
+        print("Please input date(No input year default is Today ):")
+        date=input()
+        if date=='q':
+            return False
+        if len(date)==0:
+            Time=GetNowTime()
+            date=str(Time["year"])+'-'+str(Time["month"])+'-'+str(Time["day"])
+    time=-1
+    while True :
+        try:
+            print("Please input Time you have cost")
+            time_test=input()
+            if time_test=='q':
+                return False
+            time=eval(time_test)
+            break
+        except:
+            continue
+    
+    content=""
+    while len(content)==0:
+        print("Please input Content you have to do")
+        content=input()
     if searchcatebycontent(content)==False:
-        print("Please input Cate:")#
-        Cate=input()
+        Cate=""
+        while len(Cate)==0:
+            print("Please input Cate:")#
+            Cate=input()
     else:
         Cate=searchcatebycontent(content)
 
@@ -386,13 +720,28 @@ def deldata(number):
         del data[int(number)]
         SaveDate(data)
     else:
-        begin,end=decide(number)
+        begin,end=min(decide(number)),max(decide(number))
         data=FetchData()
         for i in range(begin,end+1):
             del data[begin]
         SaveDate(data)
 
 def search(type_,string):
+    def changedate(date):
+        date_list=date.split('-')
+        if len(date_list)==2:
+            if len(date_list[0])==1:
+                date_list[0]="0"+date_list[0]
+            if len(date_list[1])==1:
+                date_list[1]="0"+date_list[1]
+        else:
+            if len(date_list[1])==1:
+                date_list[1]="0"+date_list[1]
+            if len(date_list[2])==1:
+                date_list[2]="0"+date_list[2]
+        date='-'.join(date_list)
+        print(date)
+        return date
     def SearchBydate(date):
         data=FetchData()
         Ans = []
@@ -415,7 +764,8 @@ def search(type_,string):
                 Ans.append(data[i])
         return Ans
     if type_=="date":
-        return SearchBydate(string)
+        date=changedate(string)
+        return SearchBydate(date)
     elif type_=="cate":
         return SearchBycate(string)
     elif type_=="cont":
@@ -457,6 +807,7 @@ def DataVisual(char):
             explode = tuple(basic)
             axes2.set_title("Content-Time Pie",fontdict={"fontsize":16,"color":"blue"})
             plt.pie(sizes,explode=explode,labels=labels,autopct='%1.1f%%',shadow=True,startangle=150)
+            plt.savefig('./1.png')
             plt.show()
     def Rel(data):
             labels=list(data[1].keys())
@@ -469,6 +820,7 @@ def DataVisual(char):
             axes2=plt.subplot(1,2,2)
             axes2.set_title("Content-Time Pie",fontdict={"fontsize":16,"color":"blue"})
             plt.bar(labels,sizes)
+            plt.savefig('./1.png')
             plt.show()
     def Radar(datas):
             matplotlib.rcParams['font.family']='SimHei'
@@ -500,6 +852,7 @@ def DataVisual(char):
             plt.fill(angle,data,facecolor='g',alpha=0.25)
             plt.thetagrids(angle*180/np.pi,labels)
             axes2.set_title("Content-Time Radar",fontdict={"fontsize":13,"color":"blue"})
+            plt.savefig('./1.png')
             plt.show()
     data=Getdata(data)
     if char=='pie':
@@ -508,11 +861,8 @@ def DataVisual(char):
         Rel(data)
     elif char=='radar':
         Radar(data)
-
-# def TimeRecordUi():
-#     pass
         
-def SecondWechat(filetype):
+def SendWechat(filetype):  #image or file
     def send_data(companyid,appid,secret):
         def uploadimg(filename, access_token):
             from requests_toolbelt import MultipartEncoder
@@ -526,12 +876,21 @@ def SecondWechat(filetype):
             # print(m.content_length)
             r = requests.post(url=post_file_url, data=m, headers={'Content-Type': m.content_type})
             r=json.loads(r.text)
+            # if os.path.exists("1.png"):
+                # os.remove("./1.png ")
             # print(r)
             return r["media_id"]
         def gettoken():
-                url="https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}".format(companyid,secret)
-                mes=json.loads(requests.get(url=url).text)
-                token=mes["access_token"]
+                if os.path.exists("token.json"):
+                    f=open("token.json",'r')
+                    token=json.load(f)
+                else:
+                    url="https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}".format(companyid,secret)
+                    mes=json.loads(requests.get(url=url).text)
+                    token=mes["access_token"]
+                    with open("token.json",'wt') as f:
+                        json.dump(token,f)
+
                 return token
         send_url = 'https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=' + gettoken()
         if filetype=="image":
@@ -561,10 +920,18 @@ def SecondWechat(filetype):
         respone = respone.json()
         return respone["errmsg"]
 
-
     send_data(companyid,appid,secret)
-home()
-# SecondWechat("csv")
+
+
+if __name__=="__main__":
+    if os.path.exists("./data.csv")==False or os.path.getsize("./data.csv")==True:
+        print("you need to give me some data!")
+        time.sleep(2)
+        AddDataUI()
+        home()
+    else:
+        home()
+# SendWechat("csv")
 
 # def TimeRecordH():
 

@@ -103,7 +103,7 @@ def home():
             weather=json.loads(content)
         print("             {:^24s}".format(weather['cityname']))
         print("            温度：{0}-{1} 天气：{2}".format(weather["temp"],weather["tempn"],weather["weather"]))
-        print("                   风向：{0} \n                风速：{1}".format(weather['wd'],weather["ws"]))
+        print("                   风向：{0} \n                    风速：{1}".format(weather['wd'],weather["ws"]))
     except:
         pass 
     # print("{}温度:{}气压：{}")
@@ -122,8 +122,11 @@ def home():
                                     print("            |","{}".format(select[i//2-1]).center(19),"|")    
     choice=''
     while choice not in ("1","2","3","4","5","6"):
-        choice=msvcrt.getch()
-        choice=str(choice,encoding='utf-8')
+        try:
+            choice=msvcrt.getch()
+            choice=str(choice,encoding='utf-8')
+        except:
+            continue
 
     decide(eval(choice))
     # print(eval(choice))
@@ -340,7 +343,10 @@ def TimeRecordH():
         print("Please input what type you want to sort(1.date,2.time):")
         choice=''
         while choice not in (1,2) :
-            choice=eval(msvcrt.getch())
+            try:
+                choice=eval(msvcrt.getch())
+            except:
+                continue
         if choice==1:
             sort_list=Sortbydate(FetchData())
         else:
@@ -356,12 +362,15 @@ def TimeRecordH():
         choice=''
         n=0
         choice=''
-        while choice not in ('s','d','a','w','p','u','c','q'):
+        while choice not in ('s','d','a','w','p','u','c','q','h'):
             
             os.system('cls')
             display(data[n:n+10])
             print("Press Enter to next page(s:\"search\";d:\"delete\";a:\"add\";w:\"wechat\";\np:\"visual\";u:\"sort\";c:\"change\";q:\"quit\"):")
-            choice=str(msvcrt.getch(),encoding="utf-8")
+            try:
+                choice=str(msvcrt.getch(),encoding="utf-8")
+            except:
+                continue
             # print(choice)
             if choice=='\r':
                 if n+10<len(data):
@@ -381,7 +390,7 @@ def TimeRecordH():
         if choice=="p":
             inpicture()
         if choice=="h":
-            choices()
+            choices(FetchData())
         if choice=="u":
             insort()
         if choice=='c':
@@ -740,6 +749,7 @@ def AddDataUI():
 
     act=[date,Cate,time,content,0]
     AddData(act)
+    return False
     # print(act)
 
 def deldata(number):
@@ -964,6 +974,7 @@ def SendWechat(filetype):  #image or file
         respone = requests.post(send_url, send_msges)
         respone = respone.json()
         return respone["errmsg"]
+
 
     send_data(companyid,appid,secret)
 

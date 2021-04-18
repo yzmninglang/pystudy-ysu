@@ -59,8 +59,13 @@ def home():
             if i in location:
                 locations=location.strip(i)
                 # print(locations)
-
-        url="http://toy1.weather.com.cn/search?cityname={}&callback=success_jsonpCallback&_=1618638366530".format(locations)
+        if len(locations)>3:
+            locations=locations[0:3]
+        else:
+            locations=locations
+        b=str(time.time()).split(".")
+        timestamp=b[0]+b[1][0:3]
+        url="http://toy1.weather.com.cn/search?cityname={}&callback=success_jsonpCallback&_={}".format(locations,timestamp)
         text=requests.get(url=url,headers=head).content.decode("utf-8")
         text=re.findall('"ref":"([0-9]*?)~.*?~'.format(locations),text,re.DOTALL)[0]
         # print(text)
@@ -102,8 +107,9 @@ def home():
             content=f2.read()
             weather=json.loads(content)
         print("             {:^24s}".format(weather['cityname']))
-        print("            温度：{0}-{1} 天气：{2}".format(weather["temp"],weather["tempn"],weather["weather"]))
-        print("                   风向：{0} \n                    风速：{1}".format(weather['wd'],weather["ws"]))
+        print("温度：{0}-{1} 天气：{2}".format(weather["temp"],weather["tempn"],weather["weather"]).center(44))
+        print("风向：{0}".format(weather['wd']).center(44))
+        print("风速：{0}".format(weather['ws']).center(45))
     except:
         pass 
     # print("{}温度:{}气压：{}")

@@ -24,7 +24,7 @@ def getweather():
         locations=locations[0:3]
     else:
         locations=locations
-    locations="秦皇岛"
+    # locations="秦皇岛"
     url="http://toy1.weather.com.cn/search?cityname={}&callback=success_jsonpCallback&_={}".format(locations,int(timestamp)-2000000)
     text=requests.get(url=url,headers=head).content.decode("utf-8")
     # print()

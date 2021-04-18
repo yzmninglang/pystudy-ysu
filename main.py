@@ -143,7 +143,10 @@ def ChangeTime():
         while choice not in (1,2,3):
             print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
             try:
-                choice=eval(msvcrt.getch())
+                choice=msvcrt.getch()
+                if str(choice,encoding="utf-8")=='q':
+                    break
+                choice=eval(choice)
             except:
                 continue
         if choice==1:
@@ -151,6 +154,8 @@ def ChangeTime():
             while cate!='q':
                 print("Please input Cate:")
                 cate=input()
+                if cate=='q':
+                    ChangeTime()  #
                 list_=search(string=cate,type_="cate")
                 display(list_)
                 break
@@ -161,6 +166,8 @@ def ChangeTime():
             while date!='q' :
                 print("Please input Date:")
                 date=input()
+                if date=='q':
+                    ChangeTime() 
                 if decidedate(date)==True:
                     list_=search(string=date,type_="date")
                     display(list_)
@@ -171,9 +178,13 @@ def ChangeTime():
             while act!='q':
                 print("Please input activity:")
                 act=input()
+                if act=='q':
+                    ChangeTime() 
                 list_=search(string=act,type_="cont")
                 display(list_)
                 break
+        else :
+            return False
     choice=''
     while choice!='q':
         display(FetchData())
@@ -182,7 +193,9 @@ def ChangeTime():
             print("whether to filter?(Y/N)")
             select=str(msvcrt.getch(),encoding="utf-8")
         if select in ("y","Y"):
-            insearch()
+            a=insearch()
+            if a==False:
+                ChangeTime()
         try:
             if Changedata()==False:
                 break
@@ -435,13 +448,20 @@ def AnalysisUi_back():
                 print("            |","{}".format(select[i//2-1]).center(17),"   |")
             elif i==9   :
                                         print("            |","{}".format(select[i//2-1]).center(19),"|")    
-        choice=msvcrt.getch()
-        choice_q=str(choice,encoding="utf-8")
+        choice=0
+        while choice not in ("1","2","3","4",'q'):
+            try:
+                choice=msvcrt.getch()
+                choice=str(choice,encoding="utf-8")
+            except:
+
+                continue
+        choice_q=choice
         if choice_q=='q':
             return False
-        while choice_q=='\r':
-            choice=msvcrt.getch()
-            choice_q=str(choice,encoding="utf-8")
+        # while choice_q=='\r':
+        #     choice=msvcrt.getch()
+        #     choice_q=str(choice,encoding="utf-8")
         choice=eval(choice_q)
         if choice ==1:
             DataVisual("pie")
@@ -461,6 +481,8 @@ def AnalysisUi_back():
                         i=4
                     except:
                         i=i+1
+                        print("try {} th time,it have something wrong".format(i))
+                        time.sleep(1)
         elif choice==3:
             DataVisual("rel")
             while True:
@@ -479,6 +501,8 @@ def AnalysisUi_back():
                         i=4
                     except:
                         i=i+1
+                        print("try {} th time,it have something wrong".format(i))
+                        time.sleep(1)
         elif choice==2:
             DataVisual("radar")
             while True:
@@ -497,6 +521,8 @@ def AnalysisUi_back():
                         i=4
                     except:
                         i=i+1
+                        print("try {} th time,it have something wrong".format(i))
+                        time.sleep(1)
         elif choice==4:
             home()
         else :
@@ -617,11 +643,22 @@ def Sortbytime(Two_dim_arry):
 
 def Changedata():
     print("Please input which data you want to change:")
-    choice=input()
+    data=FetchData()
+    # choice=input()
+    choice=-1
+    while choice<0 or choice >len(data):
+        try:
+            choice=input() 
+            if choice=="q":
+                break        
+            choice=eval(choice)
+            if choice<0 or choice >len(data):
+                print("it seem as what you input out of range:")
+        except:
+            # print("it seem like you input something wrong:")
+            continue
     if choice=='q':
         return False
-    choice=eval(choice)
-    data=FetchData()
     def ReplaceCate(content,Category):
         def SaveData(Two_dim_arry):
             for i in range(len(Two_dim_arry)):
@@ -957,7 +994,7 @@ def SendWechat(filetype):  #image or file
         if filetype=="image":
             send_values = {
                 "touser": "@all",
-                #"toparty": self.TOPARY,    #设置给部门发送
+                #"toparty": self.TOPARY,  
                 "msgtype": "image",
                 "agentid": appid,
                 "image": {
@@ -968,7 +1005,7 @@ def SendWechat(filetype):  #image or file
         else:
             send_values = {
                 "touser": "@all",
-                #"toparty": self.TOPARY,    #设置给部门发送
+                #"toparty": self.TOPARY,    
                 "msgtype": "file",
                 "agentid": appid,
                 "file": {
@@ -980,7 +1017,9 @@ def SendWechat(filetype):  #image or file
         respone = requests.post(send_url, send_msges)
         respone = respone.json()
         return respone["errmsg"]
-
+    companyid="ww3ffce170f1d0b2df"
+    secret="FFZtftA2TiBbDlNxez4HIFOOFQbTeeeDUQ321Uyj2KY"
+    appid='1000002'
 
     send_data(companyid,appid,secret)
 

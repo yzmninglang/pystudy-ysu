@@ -320,7 +320,7 @@ def TimeRecordH():
         print("Please input the number you want to delete(or Interval):")
         numbers=input()
         deldata(number=numbers)
-        choices()
+        choices(FetchData())
     def inadd():
         a=True
         while a!=False :
@@ -509,7 +509,7 @@ def display(Two_dim_arry):
     print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
     read=Two_dim_arry
     for i in range(len(read)):
-        print(read[i][-1],end=" "*9)
+        print(str(read[i][-1]),end=" "*9)
         for m in range(len(read[0])):
             if m<4:
                 print(read[i][m].center(8," "),end='')

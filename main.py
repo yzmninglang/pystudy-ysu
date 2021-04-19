@@ -1017,9 +1017,7 @@ def SendWechat(filetype):  #image or file
         respone = requests.post(send_url, send_msges)
         respone = respone.json()
         return respone["errmsg"]
-    companyid="ww3ffce170f1d0b2df"
-    secret="FFZtftA2TiBbDlNxez4HIFOOFQbTeeeDUQ321Uyj2KY"
-    appid='1000002'
+
 
     send_data(companyid,appid,secret)
 

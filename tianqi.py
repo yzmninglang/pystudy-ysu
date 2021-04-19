@@ -28,7 +28,7 @@ def getweather():
     url="http://toy1.weather.com.cn/search?cityname={}&callback=success_jsonpCallback&_={}".format(locations,int(timestamp)-2000000)
     text=requests.get(url=url,headers=head).content.decode("utf-8")
     # print()
-    # print(text)
+    print(text)
     text=re.findall('"ref":"([0-9]*?)~.*?~'.format(locations),text,re.DOTALL)[0]
     print(text)
     getweatherurl="http://d1.weather.com.cn/dingzhi/{}.html".format(text)

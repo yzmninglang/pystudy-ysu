@@ -11,7 +11,7 @@ import re
 import requests
 import json
 
-
+qt=False
 sort=True
 def decidedate(date_string):
     month_decide=False
@@ -293,6 +293,20 @@ def AddTimeH():
     home()
 
 def TimeRecordH():
+    def decide(string):
+        if "-" in string:
+            number=string.split('-')
+            try:
+                int(number[0])
+                int(number[1])
+            except:
+                return False
+        else:
+            try:
+                int(string)
+            except:
+                return False
+        return True
     choice=0
     def insearch():
         choice=0
@@ -330,16 +344,23 @@ def TimeRecordH():
                 choices(list_)
             choices()
     def indelete():
-        print("Please input the number you want to delete(or Interval):")
-        numbers=input()
+        while True:
+            print("Please input the number you want to delete(or Interval):")
+            number=input()
+            if decide(number)==True:
+                break
+        numbers=number
         deldata(number=numbers)
         choices(FetchData())
     def inadd():
         a=True
-        while a!=False :
-            a=AddDataUI()
-            if a==True:
-                a=False
+        AddDataUI()
+        # while a==True :
+        #     os.system("cls")
+        #     display(FetchData())
+        #     a=AddDataUI()
+        #     if a==True:
+        #         a=False
 
         choices(data=FetchData())
     def insend():
@@ -354,6 +375,8 @@ def TimeRecordH():
                 time.sleep(1)
         choices() 
     def inpicture():
+        global qt
+        qt=True
         res=AnalysisUi()
         if res==False:
             choices(FetchData())
@@ -372,7 +395,6 @@ def TimeRecordH():
             sort_list=Sortbytime(FetchData())
         sort=bool(1-sort)
         choices(sort_list)
-
     def inchange():
         Changedata()
         choices(FetchData())
@@ -414,9 +436,6 @@ def TimeRecordH():
             insort()
         if choice=='c':
             inchange()
-        
-    
-
 
     choices()
     # elif choice
@@ -428,8 +447,12 @@ def GetNowTime():
     return time
 
 def AnalysisUi():
+    global qt
     res=AnalysisUi_back()
     if res==False:
+        if qt==True: 
+            qt=False
+            return False
         home()
 
 def AnalysisUi_back():
@@ -642,18 +665,20 @@ def Sortbytime(Two_dim_arry):
     return Two_dim_arry
 
 def Changedata():
-    print("Please input which data you want to change:")
     data=FetchData()
     # choice=input()
     choice=-1
-    while choice<0 or choice >len(data):
+    while True:
         try:
-            choice=input() 
+            print("Please input which data you want to change:")
+            choice=input()
+            # if len(choice)==0:
+            #     continue 
             if choice=="q":
-                break        
-            choice=eval(choice)
-            if choice<0 or choice >len(data):
-                print("it seem as what you input out of range:")
+                break 
+            if eval(choice)>=0 and eval(choice)<len(data):
+                choice=eval(choice)
+                break
         except:
             # print("it seem like you input something wrong:")
             continue
@@ -678,7 +703,7 @@ def Changedata():
     def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
         def DecideDate(date):
             if str(date).count('-')==1:
-                date=str(GetNowTime()['year'])+"-"+str(date)
+                datetime=str(GetNowTime()['year'])+"-"+str(date)
             else:
                 date=str(date)
             return date
@@ -773,7 +798,7 @@ def AddDataUI():
             time_test=input()
             if time_test=='q':
                 return False
-            time=eval(time_test)
+            time=int(time_test)
             break
         except:
             continue
@@ -792,7 +817,7 @@ def AddDataUI():
 
     act=[date,Cate,time,content,0]
     AddData(act)
-    return False
+    return True
     # print(act)
 
 def deldata(number):
@@ -1018,7 +1043,9 @@ def SendWechat(filetype):  #image or file
         respone = respone.json()
         return respone["errmsg"]
 
-
+    companyid="ww3ffce170f1d0b2df"
+    secret="FFZtftA2TiBbDlNxez4HIFOOFQbTeeeDUQ321Uyj2KY"
+    appid='1000002'
     send_data(companyid,appid,secret)
 
 

@@ -1,16 +1,16 @@
-import msvcrt
-import sys
-import os
-import csv
-import time
-import datetime 
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib
-import re
-import requests
-import json
-
+import msvcrt   #优化系统的交互
+import sys    
+import os    #清屏
+import csv   #读取和写入csv
+import time  #获取时间锉，休眠
+import datetime     #获取当前时间
+import numpy as np   #数据可视化
+import matplotlib.pyplot as plt    #数据可视化
+import matplotlib     #调整matplotlib的一些参数
+import re    #爬虫（天气）   #微信
+import requests    
+import json    #解析爬虫json ，写入token和weather
+#上面的库一方面可以通过pip安装，另一方面也可以通过在PyPi下载之后再安装
 qt=False
 sort=True
 def decidedate(date_string):
@@ -137,8 +137,8 @@ def home():
     decide(eval(choice))
     # print(eval(choice))
 
-def ChangeTime():
-    def insearch():
+def ChangeTime():  #修改时间记录的UI界面
+    def insearch():   #为changetimeui提供过滤函数
         choice=0
         while choice not in (1,2,3):
             print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
@@ -186,7 +186,7 @@ def ChangeTime():
         else :
             return False
     choice=''
-    while choice!='q':
+    while choice!='q':  #调用changedata来改变数据库data
         display(FetchData())
         select=''
         while select not in ("Y","N","y","n",'q'):
@@ -204,7 +204,7 @@ def ChangeTime():
     home()
 
 def DeleteTime():
-    def insearch():
+    def insearch():   #与ChangeTime相同
         choice=0
         while choice not in (1,2,3):
             print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
@@ -220,7 +220,6 @@ def DeleteTime():
                 list_=search(string=cate,type_="cate")
                 display(list_)
                 break
-            # DeleteTime()
 
         elif choice==2:
             date=""
@@ -241,7 +240,7 @@ def DeleteTime():
                 display(list_)
                 break
             # DeleteTime()
-    def decideinterval(two_number_string):
+    def decideinterval(two_number_string):   #判断是区间
         list_=two_number_string.split("-")
         print(list_)
         print(len(FetchData()))
@@ -257,7 +256,7 @@ def DeleteTime():
             # print("2")
             # input()
             return False
-    while True:
+    while True:   #判断输入的类型，将其传递给deletedata删除
         os.system("cls")
         display(FetchData())
         select=''
@@ -274,7 +273,7 @@ def DeleteTime():
             try:
                 # print(choice)
                 a=int(choice)
-                # input()
+                # input()  
                 # print()
                 if a>len(FetchData())-1:
                     continue
@@ -285,15 +284,15 @@ def DeleteTime():
             deldata(choice)
     home()
 
-def AddTimeH():
+def AddTimeH():   #添加时间的UI(前端)，内部只有调用以及返回地址
     a=True
     while a!=False:
         os.system('cls')
         a=AddDataUI()
     home()
 
-def TimeRecordH():
-    def decide(string):
+def TimeRecordH(): #时间显示的主界面
+    def decide(string):#判断每一个选项的选择
         if "-" in string:
             number=string.split('-')
             try:
@@ -306,9 +305,9 @@ def TimeRecordH():
                 int(string)
             except:
                 return False
-        return True
+        return True 
     choice=0
-    def insearch():
+    def insearch():  #搜索功能，下面各个函数均相同
         choice=0
         while choice not in (1,2,3):
             print("\rPlease input what type you want to search(1.Cate,2.Date,3.Act):")
@@ -398,7 +397,7 @@ def TimeRecordH():
     def inchange():
         Changedata()
         choices(FetchData())
-    def choices(data=FetchData()):
+    def choices(data=FetchData()):   #主界面显示函数，默认显示十个列表，可以传递参数显示其他
         # data=FetchData()
         choice=''
         n=0
@@ -440,13 +439,13 @@ def TimeRecordH():
     choices()
     # elif choice
 
-def GetNowTime():
+def GetNowTime():   #获取当前时间
     now=datetime.datetime.now()
     time={"year":now.year,"month":now.month,"day":now.day,"hour":now.hour,
         "minute":now.minute,"timestamp":now.timestamp()}
     return time
 
-def AnalysisUi():
+def AnalysisUi():   #分析界面，只有函数调用，判断返回地点
     global qt
     res=AnalysisUi_back()
     if res==False:
@@ -455,7 +454,7 @@ def AnalysisUi():
             return False
         home()
 
-def AnalysisUi_back():
+def AnalysisUi_back():    #分析界面
     while True:
         os.system('cls')
         select=[" ","1-时饼图","2-雷达图","3-柱形图","4-主界面"]
@@ -553,7 +552,7 @@ def AnalysisUi_back():
         # decide(choice)
         # print(eval(choice))
 
-def display(Two_dim_arry):
+def display(Two_dim_arry):    #主要是在TimeRecordH调用显示，change里面也有
     os.system('cls')
     print("Number{0}Date{0}Cate{0}Time{0}Content".format(" "*6))
     read=Two_dim_arry
@@ -614,7 +613,7 @@ def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about d
     data.append(one_dim_list)
     SaveDate(data)
 
-def Sortbydate(Two_dim_arry):
+def Sortbydate(Two_dim_arry):  #以日期整理,返回一个二维列表
     def Changedate(Two_dim_arry):
         def decide(time):
             time=str(time).split("-")
@@ -637,12 +636,9 @@ def Sortbydate(Two_dim_arry):
         a=sorted(Two_dim_arry,key=(lambda x:x[0].replace('-','')[-8:]),reverse=False)
 
     return a 
-    # display(Two_dim_arry)
-    # print(Two_dim_arry)
-    # display(a)
-
-def Sortbytime(Two_dim_arry):
-    def Changedate(Two_dim_arry):
+ 
+def Sortbytime(Two_dim_arry): #以时间整理，返回一个二维列表
+    def Changedate(Two_dim_arry): #改变时间为标准时间
         def decide(time):
             time=str(time).split("-")
             for i in range(1,3):
@@ -651,12 +647,12 @@ def Sortbytime(Two_dim_arry):
                     time[i]="0"+str(time[i])
                     # print(time)
             res = str(time[0])+'-'+str(time[1])+'-'+str(time[2])
-            return res
+            return res  # #如果这个时间不是标准时间，添加0 返回
                 
         for x in Two_dim_arry:
             x[0]=decide(x[0])
         # display(Two_dim_arry)
-        return Two_dim_arry
+        return Two_dim_arry   #
     Two_dim_arry=Changedate(Two_dim_arry)
     if sort==True:
         Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=True)
@@ -664,7 +660,7 @@ def Sortbytime(Two_dim_arry):
         Two_dim_arry=sorted(Two_dim_arry,key=(lambda x:x[2]),reverse=False)
     return Two_dim_arry
 
-def Changedata():
+def Changedata():  #改变某一行的数据
     data=FetchData()
     # choice=input()
     choice=-1
@@ -684,7 +680,7 @@ def Changedata():
             continue
     if choice=='q':
         return False
-    def ReplaceCate(content,Category):
+    def ReplaceCate(content,Category):   #替换具有相同内容的分类
         def SaveData(Two_dim_arry):
             for i in range(len(Two_dim_arry)):
                 Two_dim_arry[i][-1]=i
@@ -758,12 +754,12 @@ def Changedata():
     AddData(act)
 
 def AddDataUI():
-    def searchcatebycontent(content):
+    def searchcatebycontent(content): #根据内容查询分类存在返回分类，没有则False
         data=FetchData()
         for i in range(len(data)):
             if content == data[i][3]:
                 return data[i][1]
-        return False
+        return False  
     def AddData(one_dim_list):  #[Date,Cate,Time,Content,number](Don't worry about date)
         def DecideDate(date):
             if str(date).count('-')==1:
@@ -824,14 +820,14 @@ def deldata(number):
     number=str(number)
     # print("Please input number you want to del(or Interval):")
     # number=input()
-    def SaveDate(Two_dim_arry):
+    def SaveDate(Two_dim_arry): #保存数据，接收二维列表
         for i in range(len(Two_dim_arry)):
             Two_dim_arry[i][-1]=i
         with open('data.csv', 'w', newline='',encoding="utf-8") as csvfile:
             writer  = csv.writer(csvfile)
             for row in Two_dim_arry:
-                writer.writerow(row)
-    def decide(number):
+                writer.writerow(row)  
+    def decide(number): # 判断是区间还是一个数
         if '-' in number:
             a=int(number.split('-')[0])
             b=int(number.split('-')[1])
@@ -849,8 +845,8 @@ def deldata(number):
             del data[begin]
         SaveDate(data)
 
-def search(type_,string):
-    def changedate(date):
+def search(type_,string): #根据不同的类型搜索
+    def changedate(date):#改变日期为标准日期
         date_list=date.split('-')
         if len(date_list)==2:
             if len(date_list[0])==1:
@@ -864,22 +860,22 @@ def search(type_,string):
                 date_list[2]="0"+date_list[2]
         date='-'.join(date_list)
         print(date)
-        return date
-    def SearchBydate(date):
+        return date  
+    def SearchBydate(date):#根据搜索日期搜索，返回二维列表
         data=FetchData()
         Ans = []
         for i in range(len(data)):
             if date in data[i][0]:
                 Ans.append(data[i])
-        return Ans
-    def SearchBycate(Cate):
+        return Ans   
+    def SearchBycate(Cate):#根据种类搜索，返回二维列表
         data=FetchData()
         Ans=[]
         for i in range(len(data)):
             if Cate in data[i][1]:
                 Ans.append(data[i])
-        return Ans
-    def SearchBycont(cont):
+        return Ans   
+    def SearchBycont(cont):#根据活动来搜索，返回二维列表
         data=FetchData()
         Ans=[]
         for i in range(len(data)):
@@ -898,7 +894,7 @@ def search(type_,string):
     # ans=SearchBycont(Cate)
     # display(ans)
  
-def DataVisual(char):
+def DataVisual(char): #数据可视化模块
     data=FetchData()
 
     plt.rcParams['font.sans-serif']=['SimHei']
@@ -910,7 +906,7 @@ def DataVisual(char):
            cate_time[x[1]]=cate_time.get(x[1],0)+int(x[2])
         res=[content_time,cate_time]
         return res
-    def Pie(data):
+    def Pie(data):#接收的是一个列表里包含两个字典，画图
 
             labels=list(data[1].keys())
             sizes=list(data[1].values())
@@ -986,8 +982,8 @@ def DataVisual(char):
         Radar(data)
         
 def SendWechat(filetype):  #image or file
-    def send_data(companyid,appid,secret):
-        def uploadimg(filename, access_token):
+    def send_data(companyid,appid,secret):   #根据企业微信机器人的三个信息发送信息
+        def uploadimg(filename, access_token):   #token和filename,来确定发送哪一个文件
             from requests_toolbelt import MultipartEncoder
             
             post_file_url = f"https://qyapi.weixin.qq.com/cgi-bin/media/upload?access_token={access_token}&type=file"
@@ -995,13 +991,8 @@ def SendWechat(filetype):  #image or file
                 m =MultipartEncoder(  {"filename":"1.png","file": ('1.png', open(filename, 'rb'),'text/plain')})
             elif filetype=="csv":
                 m=MultipartEncoder(  {"filename":"data.csv","file": ('data.csv', open("data.csv", 'rb'),'text/plain')})
-            # print(m.content_type)
-            # print(m.content_length)
             r = requests.post(url=post_file_url, data=m, headers={'Content-Type': m.content_type})
             r=json.loads(r.text)
-            # if os.path.exists("1.png"):
-                # os.remove("./1.png ")
-            # print(r)
             return r["media_id"]
         def gettoken():
                 if os.path.exists("token.json"):
@@ -1043,14 +1034,14 @@ def SendWechat(filetype):  #image or file
         respone = respone.json()
         return respone["errmsg"]
 
-    companyid="ww3ffce170f1d0b2df"
-    secret="FFZtftA2TiBbDlNxez4HIFOOFQbTeeeDUQ321Uyj2KY"
-    appid='1000002'
+    companyid=''   #请填入企业微信公司的id
+    secret=''       #请填写企业微信创建的app的密钥
+    appid=''        #请填写app的用户编号
     send_data(companyid,appid,secret)
 
 
 if __name__=="__main__":
-    if os.path.exists("./data.csv")==False or os.path.getsize("./data.csv")==True:
+    if os.path.exists("./data.csv")==False or os.path.getsize("./data.csv")==True:  #判断csv数据库是否存在
         print("you need to give me some data!")
         time.sleep(2)
         AddDataUI()
